@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome to PyCaret](README.md)
+* [Long-Term Machine Learning](README.md)
 
 ## GET STARTED
 
@@ -74,9 +74,9 @@
 ## IMPORTANT LINKS
 
 * [⚙ API Reference](https://pycaret.readthedocs.io/en/latest/)
-* [🙋    Discussions](https://github.com/pycaret/pycaret/discussions)
+* [🙋 Discussions](https://github.com/pycaret/pycaret/discussions)
 * [📤 Issues](https://github.com/pycaret/pycaret/issues)
-* [👮    License](https://github.com/pycaret/pycaret/blob/master/LICENSE)
+* [👮 License](https://github.com/pycaret/pycaret/blob/master/LICENSE)
 
 ## MEDIA
 
