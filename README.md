@@ -39,13 +39,13 @@ The library comes preloaded with 10s of unique datasets like accounting data, ra
 
 | ⭐ [**Tutorials**](get-started/tutorials.md)\*\*\*\*                         | Checkout our official notebooks!        |
 | --------------------------------------------------------------------------- | --------------------------------------- |
-| 📋 [**Examples**](learn-pycaret/examples.md)\*\*\*\*                        | Example notebooks.                      |
-| 📙 [**Blog**](learn-pycaret/official-blog/)\*\*\*\*                         | Tutorials and articles by contributors. |
+| 📋 [**Examples**](datasets/breakout.md)\*\*\*\*                             | Example notebooks.                      |
+| 📙 [**Blog**](broken-reference)\*\*\*\*                                     | Tutorials and articles by contributors. |
 | 📚 [**API Reference**](https://pycaret.readthedocs.io/en/latest/index.html) | The detailed API docs of PyCaret        |
-| 📺 [**Video Tutorials**](learn-pycaret/videos.md)\*\*\*\*                   | Our video tutorial from various events. |
+| 📺 [**Video Tutorials**](datasets/institutional.md)\*\*\*\*                 | Our video tutorial from various events. |
 | 📢 [**Discussions**](https://github.com/pycaret/pycaret/discussions)        | Engage with community and contributors. |
 | 🛠️ [**Changelog**](get-started/release-notes.md)\*\*\*\*                   | Changes and version history.            |
-| :question:[**FAQs**](learn-pycaret/faqs.md)                                 | Frequently Asked Questions              |
+| :question:[**FAQs**](datasets/faqs.md)                                      | Frequently Asked Questions              |
 | 🌳 [**Roadmap**](https://github.com/pycaret/pycaret/issues/1756)            | PyCaret's development plan.             |
 
 ## Features
@@ -127,7 +127,7 @@ If you want to contribute to the project please reach out
 
 * The fastest way to get help is to email us for support.&#x20;
 * We also have a pretty active [Linkedin](https://www.linkedin.com/company/sovai/) page.
-* Check our [Frequently Asked Questions](learn-pycaret/faqs.md) (FAQs) page.
+* Check our [Frequently Asked Questions](datasets/faqs.md) (FAQs) page.
 
 ## Citation
 

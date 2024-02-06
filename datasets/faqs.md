@@ -2,7 +2,9 @@
 description: Frequently Asked Questions!
 ---
 
-# ❓ FAQs
+# 💢 Comprehensive Risk
+
+
 
 {% hint style="info" %}
 **PyCaret 3.0-rc is now available**. `pip install --pre pycaret` to try it. Check out this example [Notebook](https://colab.research.google.com/drive/1\_H0sHYhzKGZDmgzrQLosuZAR3nOaL6CN?usp=sharing).
@@ -22,7 +24,7 @@ The short answer is it's an open-source, low-code machine learning library built
 
 PyCaret is tested and supported on the following 64-bit systems:
 
-* Python 3.6 – 3.8&#x20;
+* Python 3.6 – 3.8
 * Python 3.9 for Ubuntu only
 * Ubuntu 16.04 or later
 * Windows 7 or later
@@ -33,7 +35,7 @@ PyCaret also works on Mac OS but we do not guarantee the performance as the rele
 
 <details>
 
-<summary>Can  I use PyCaret on Google Colab or Kaggle Notebooks?</summary>
+<summary>Can I use PyCaret on Google Colab or Kaggle Notebooks?</summary>
 
 Absolutely. Just do `pip install pycaret`
 
@@ -45,7 +47,7 @@ Since base installations on these platforms are not in our control, time-to-time
 
 <summary>Does PyCaret support model training on GPU?</summary>
 
-Yes. We have integrated PyCaret with the amazing [RAPIDS.AI](https://rapids.ai/) project. To use GPU instead of CPU, just pass `use_gpu=True` in the `setup` function.&#x20;
+Yes. We have integrated PyCaret with the amazing [RAPIDS.AI](https://rapids.ai/) project. To use GPU instead of CPU, just pass `use_gpu=True` in the `setup` function.
 
 **This will use CPU for model training:**
 
@@ -101,7 +103,7 @@ Not yet. In the future, maybe.
 
 <summary>Can I integrate PyCaret with BI tools like Power BI, Tableau, Qlik, etc.?</summary>
 
-Yes, any tool that supports the Python environment. You can use PyCaret within Power BI, Tableau, SQL, Alteryx, KNIME. If you would like to learn more, read these [official tutorials](official-blog/#pycaret-and-bi-integrations).
+Yes, any tool that supports the Python environment. You can use PyCaret within Power BI, Tableau, SQL, Alteryx, KNIME. If you would like to learn more, read these [official tutorials](broken-reference).
 
 </details>
 
@@ -126,7 +128,7 @@ It doesn't matter what number you pass to `session_id` as long as you can rememb
 
 <summary>Can I run PyCaret on command line or any other environment than Notebook?</summary>
 
-Absolutely. PyCaret is designed and developed to work in a Notebook environment, that doesn't mean you can't use it outside of Notebook in other IDE's such as Visual Code, PyCharm, or Spyder. When you are using PyCaret outside of the Notebook environment, you must pass `html=False` and `silent=True` in the `setup` function. Since PyCaret uses IPython for some callbacks functionality, without passing these two parameters explicitly, your code will fail when you are outside of the Notebook environment.&#x20;
+Absolutely. PyCaret is designed and developed to work in a Notebook environment, that doesn't mean you can't use it outside of Notebook in other IDE's such as Visual Code, PyCharm, or Spyder. When you are using PyCaret outside of the Notebook environment, you must pass `html=False` and `silent=True` in the `setup` function. Since PyCaret uses IPython for some callbacks functionality, without passing these two parameters explicitly, your code will fail when you are outside of the Notebook environment.
 
 **NOTE:** The name of these parameters may change in the future to something like `mode='notebook'.`
 
@@ -151,7 +153,7 @@ s = setup(data, target = 'target_name', silent = True)
 
 <summary>How can I change verbosity in PyCaret?</summary>
 
-Most functions in PyCaret has `verbose` parameter. Simply set `verbose=False` in the function.&#x20;
+Most functions in PyCaret has `verbose` parameter. Simply set `verbose=False` in the function.
 
 **Example:**
 
@@ -172,7 +174,7 @@ import os
 os.environ["PYCARET_CUSTOM_LOGGING_LEVEL"] = "CRITICAL"
 ```
 
-**NOTE:** This command will set an environment variable that is used by PyCaret's logger. Setting it to `CRITICAL` means that only critical messages will be logged and there aren't many critical messages in PyCaret.&#x20;
+**NOTE:** This command will set an environment variable that is used by PyCaret's logger. Setting it to `CRITICAL` means that only critical messages will be logged and there aren't many critical messages in PyCaret.
 
 </details>
 
@@ -180,7 +182,7 @@ os.environ["PYCARET_CUSTOM_LOGGING_LEVEL"] = "CRITICAL"
 
 <summary>I am having issues in installating PyCaret, what can I do?</summary>
 
-The first place is to check out [Common Installation Issues](../get-started/installation.md#common-installation-issues) and then [Issues](https://github.com/pycaret/pycaret/issues) on our GitHub.&#x20;
+The first place is to check out [Common Installation Issues](../get-started/installation.md#common-installation-issues) and then [Issues](https://github.com/pycaret/pycaret/issues) on our GitHub.
 
 </details>
 
@@ -199,7 +201,7 @@ Absolutely. PyCaret's vision is to give you full control of your ML pipeline. To
 
 <summary>Can I add custom metrics for cross-validation in PyCaret?</summary>
 
-Absolutely. PyCaret aim's to balance the abstraction with flexibility and so far we are doing a pretty good job. You can use PyCaret's `add_metric` and `remove_metric` functions to add or remove metrics used for cross-validation.&#x20;
+Absolutely. PyCaret aim's to balance the abstraction with flexibility and so far we are doing a pretty good job. You can use PyCaret's `add_metric` and `remove_metric` functions to add or remove metrics used for cross-validation.
 
 </details>
 
@@ -207,7 +209,7 @@ Absolutely. PyCaret aim's to balance the abstraction with flexibility and so far
 
 <summary>Can I just use PyCaret for data preprocessing?</summary>
 
-Yes if you would like. You can run the `setup` function which handles all the data preprocessing and after that you can access the transformed train set and test set using the `get_config` function.&#x20;
+Yes if you would like. You can run the `setup` function which handles all the data preprocessing and after that you can access the transformed train set and test set using the `get_config` function.
 
 **Example:**
 
@@ -225,7 +227,7 @@ X_test, y_test = get_config('X_test'), get_config('y_test')
 
 <summary>Can I export models from PyCaret and work on them outside of PyCaret?</summary>
 
-Absolutely. You can use the `save_model` function of PyCaret to export the entire Pipeline as a `pkl` file. [Learn more](../get-started/functions/#save-model) about this function.
+Absolutely. You can use the `save_model` function of PyCaret to export the entire Pipeline as a `pkl` file. [Learn more](broken-reference) about this function.
 
 </details>
 
@@ -258,7 +260,7 @@ best_model = exp.compare_models()
 
 <summary>Can I deploy ML pipelines on cloud using PyCaret?</summary>
 
-Absolutely. PyCaret is an end-to-end library with a lot of deployment functionalities. There are many official tutorials on deployment on different cloud platforms such as Azure, AWS, and GCP. You can check out these [tutorials here](official-blog/#pycaret-add-ml-deployment).
+Absolutely. PyCaret is an end-to-end library with a lot of deployment functionalities. There are many official tutorials on deployment on different cloud platforms such as Azure, AWS, and GCP. You can check out these [tutorials here](broken-reference).
 
 </details>
 
@@ -272,7 +274,7 @@ Not right now but with our next major release (3.0) our goal is to allow you to 
 
 <details>
 
-<summary>I ran the setup function and it is stucked, what should I do? </summary>
+<summary>I ran the setup function and it is stucked, what should I do?</summary>
 
 If your setup function is stuck, the first thing you should check is if you are in an environment that allows for a confirmatory dialogue box and if not you must pass `silent=True` in the setup. Secondly, if you are using Visual Code the dialogue box appears on the top of the screen as opposed to inline as you might have seen with Jupyter Notebook. Finally, sometimes it may really take a very long time especially if your dataset has categorical features with many levels (1000+ levels). In that case, you should try to combine the levels and make the features less granular before passing into PyCaret. If all this doesn't resolve your issue and you are very certain that this is some kind of bug or you can improve the code, please feel free to open a new [Issue ](https://github.com/pycaret/pycaret/issues)on our GitHub.
 
@@ -298,7 +300,7 @@ No, as long as your data can fit in the memory, you can use PyCaret. No super co
 
 <summary>Why is my pull request not getting any attention?</summary>
 
-The review process may take some time. You should not be discouraged by delays in review on your pull request. We have many features that are requested by the community and only limited time from our maintainers to review and approve these pull requests. Since every feature comes at a cost of lifetime maintenance, we care a lot about getting things right the first time.&#x20;
+The review process may take some time. You should not be discouraged by delays in review on your pull request. We have many features that are requested by the community and only limited time from our maintainers to review and approve these pull requests. Since every feature comes at a cost of lifetime maintenance, we care a lot about getting things right the first time.
 
 </details>
 
@@ -308,6 +310,6 @@ The review process may take some time. You should not be discouraged by delays i
 
 Well, PyCaret is built on top of common ML libraries and frameworks such as scikit-learn, LightGBM, XGBoost, etc. The benefit of using PyCaret is you don't have to write a lot of code. The underlying models and evaluation framework is the same as what you are used to. When we first created PyCaret we did a small comparison of performing a given set of tasks using PyCaret vs. without using PyCaret and here are the results:
 
-![](<../.gitbook/assets/image (202).png>)
+<img src="../.gitbook/assets/image (202).png" alt="" data-size="original">
 
 </details>
