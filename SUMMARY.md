@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Long-Term Machine Learning](README.md)
+* [Python for Asset Management](README.md)
 
 ## GET STARTED
 
