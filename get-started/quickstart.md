@@ -4,8 +4,6 @@ description: Quick start guide to Sovai
 
 # 🚀 Quickstart
 
-To keep the software experience clean, there are only four code submodules, [`data`](quickstart.md#download-datasets) ,[`plot`](quickstart.md#visualizing-data), [`report`](quickstart.md#running-reports), and [`compute`](quickstart.md#running-calculations).
-
 ## Introduction
 
 * [Download Datasets](quickstart.md#download-datasets)
@@ -13,6 +11,15 @@ To keep the software experience clean, there are only four code submodules, [`da
 * [Running Reports](quickstart.md#running-reports)
 * [Running Calculations](quickstart.md#running-calculations)
 * [Performing Studies](quickstart.md#performing-studies)
+
+### Commands
+
+Utilize various commands to interact with datasets:, [`data`](quickstart.md#download-datasets) ,[`plot`](quickstart.md#visualizing-data), [`report`](quickstart.md#running-reports), and [`compute`](quickstart.md#running-calculations).
+
+* `sov.data('query')`: Retrieve data based on the specified query.
+* `sov.plots('query')`: Generate plots for visual analysis.
+* `sov.reports('query')`: Access reports summarizing predictions.
+* `sov.compute('query')`: Perform computations on the dataset.
 
 ## Download Datasets
 
