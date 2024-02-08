@@ -14,56 +14,58 @@ Daily predictions arrive between 11 pm - 4 am before market open in the US.
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td>Input Datasets</td><td>Historical Stock Prices, Trading Volumes, Technical Indicators</td></tr><tr><td>Models Used</td><td>Classification Algorithms, Regression Models, Conformal Predictors</td></tr><tr><td>Model Outputs</td><td>Price Movement Predictions, Probability Scores, Confidence Intervals</td></tr></tbody></table>
 
-The Breakout SDK predicts the probabillty of price increases over the next 30-60 days for US Equities.&#x20;
+This document provides guidance on utilizing the Breakout Prediction SDK to identify potential breakout stocks over the next 30-60 days for US Equities.&#x20;
 
 The accuracy is around 65% and ROC-AUC of 68%, it is one of the strongest price breakout models on the market.&#x20;
 
-## Data Access
 
-### **Probabilities (Monthly)**
 
-**Specific Tickers**
+### Data Access
 
-```python
-import sovai as sov
-df_bankrupt = sov.data('bankruptcy', tickers=["MSFT","TSLA","META"])
-```
+#### Retrieving Data
 
-**Specific Dates**
+Fetch the latest breakout data using the SDK:
 
 ```python
-import sovai as sov
-df_bankrupt = sov.data('bankruptcy', start_date="2017-01-03", tickers=["MSFT"])
+from sovai import sov
+df_breakout = sov.data("breakout").set_index("date")
 ```
 
-**All Data**
+#### Today's Breakout Prediction
+
+Access today's highest breakout stock predictions:
 
 ```python
-import sovai as sov
-df_bankrupt = sov.data('bankruptcy')
+# Filter for the latest date and sort by prediction values
+todays_breakout_prediction = df_breakout.loc[df_breakout.index.get_level_values('date') == df_breakout.index.get_level_values('date').max()]
+todays_breakout_prediction.sort_values("prediction", ascending=False).head()
 ```
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+#### Retrieve Specific Ticker Data
 
-### Probabilities (Daily)
+Get breakout data for a specific ticker such as Microsoft (MSFT):
 
 ```python
-import sovai as sov
-df_bankrupt = sov.data('bankruptcy/daily', tickers=["MSFT","TSLA","META"])
+df_msft = sov.data("breakout", tickers=["MSFT"])
 ```
 
-The daily probabilities are experimental, and have a very short history of just a couple of months.&#x20;
+### Visualization
 
+#### Breakout Predictions
 
-
-### Feature Importance (Shapleys)
+Visualize breakout predictions using the SDK's plotting capabilities:
 
 ```python
-import sovai as sov
-df_importance = sov.data('bankruptcy/shapleys', tickers=["MSFT","TSLA","META"])
+sov.plot("breakout", chart_type="predictions", df=df_msft)
 ```
 
+#### Prediction Accuracy
 
+Assess the accuracy of breakout predictions:
+
+```python
+sov.plot("breakout", chart_type="accuracy", df=df_msft)
+```
 
 ## Data Dictionary
 
