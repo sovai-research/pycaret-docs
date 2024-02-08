@@ -1,7 +1,5 @@
 ---
-description: >-
-  Chapter 7 and Chapter 11 bankruptcy predictions made available to Sovai
-  subscribers.
+description: Chapter 7 and Chapter 11 Predictions made available to Sovai subscribers.
 ---
 
 # 📬 Bankruptcy Predictions
@@ -10,15 +8,17 @@ description: >-
 Monthly corporate bankruptcy predictions arrive the **2nd of every month**_._
 {% endhint %}
 
+`Tutorials` are the best documentation — <mark style="color:blue;">`Corporate Bankruptcy Tutorial`</mark>
+
 <table data-view="cards" data-full-width="false"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>SEC Bankruptcies, Delistings, Market Data, Financial Statements</td></tr><tr><td><strong>Models Used</strong></td><td>CNN, LightGBM, RocketModel, AutoEncoder</td></tr><tr><td><strong>Model Outputs</strong></td><td>Calibrated Probabilities, Shapley Values</td></tr></tbody></table>
 
-The Bankruptcy SDK predict the likelihood of bankruptcies in the next 6-months of US publicly listed companies using advanced machine learning models.&#x20;
+The Bankruptcy SDK predict the likelihood of bankruptcies in the next 6-months for US publicly listed companies using advanced machine learning models.&#x20;
 
-With an accuracy of around 89% and ROC-AUC of 85%, these models represent the forefront of machine learning in asset management.
+With an accuracy of around 89% and ROC-AUC of 85%, these models represent the forefront of machine learning in equity selection.
 
 ## Data Access
 
-### **Probabilities (Monthly)**
+### **Probabilities (Daily)**
 
 **Specific Tickers**
 
@@ -83,7 +83,7 @@ Generate insightful summary reports to understand bankruptcy trends:
     sov.report("bankruptcy", report_type="sector-top")
     ```
 
-    This report identifies sectors with the highest bankruptcy prediction scores.
+    This report filters sectors with the highest bankruptcy prediction scores.
 *   **Monthly Sector Change Summary:**
 
     ```python

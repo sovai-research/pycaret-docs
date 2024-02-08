@@ -12,9 +12,10 @@
 ## Datasets
 
 * [📬 Bankruptcy Predictions](datasets/bankruptcy.md)
+* [📬 Price Breakout Prediction](datasets/breakout.md)
 * [🏰 Institutional Holdings](datasets/institutional.md)
 * [🗣 Insider Trading](datasets/institutional-1.md)
-* [📈 Price Breakout](datasets/breakout.md)
+* [📈 Price Breakout](datasets/breakout-1.md)
 * [💢 Comprehensive Risk](datasets/faqs.md)
 
 ## Core Software
