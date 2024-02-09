@@ -18,8 +18,6 @@ This document provides guidance on utilizing the Breakout Prediction SDK to iden
 
 The accuracy is around 65% and ROC-AUC of 68%, it is one of the strongest price breakout models on the market.&#x20;
 
-
-
 ### Data Access
 
 #### Retrieving Data
@@ -37,9 +35,10 @@ Access today's highest breakout stock predictions:
 
 ```python
 # Filter for the latest date and sort by prediction values
-todays_breakout_prediction = df_breakout.loc[df_breakout.index.get_level_values('date') == df_breakout.index.get_level_values('date').max()]
-todays_breakout_prediction.sort_values("prediction", ascending=False).head()
+df_breakout.get_latest()
 ```
+
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 #### Retrieve Specific Ticker Data
 
@@ -69,105 +68,7 @@ sov.plot("breakout", chart_type="accuracy", df=df_msft)
 
 ## Data Dictionary
 
-<table><thead><tr><th width="295">Name</th><th width="246">Description</th><th width="89">Type</th><th>Example</th></tr></thead><tbody><tr><td><code>ticker</code></td><td>Stock ticker symbol.</td><td>TEXT</td><td>"TSLA"</td></tr><tr><td><code>date</code></td><td>Record date.</td><td>DATE</td><td>2023-09-30</td></tr><tr><td><code>probability_light</code></td><td>LightGBM Boosting Model prediction.</td><td>FLOAT</td><td>1.46636</td></tr><tr><td><code>probability_convolution</code></td><td>CNN Model prediction for bankruptcies</td><td>FLOAT</td><td>0.135975</td></tr><tr><td><code>probability_rocket</code></td><td>Rocket Model prediction for time series classification</td><td>FLOAT</td><td>0.02514</td></tr><tr><td><code>probability_encoder</code></td><td>LightGBM and CNN autoencoders Model prediction.</td><td>FLOAT</td><td>0.587817</td></tr><tr><td><code>probability_fundamental</code></td><td>Prediction using accounting data only.</td><td>FLOAT</td><td>1.26148</td></tr><tr><td><code>probability</code></td><td>Average probability across models.</td><td>FLOAT</td><td>0.553823</td></tr><tr><td><code>sans_market</code></td><td>Fundamental prediction adjusted for market predictions.</td><td>FLOAT</td><td>-0.20488</td></tr><tr><td><code>volatility</code></td><td>Variability of model predictions.</td><td>FLOAT</td><td>0.62934</td></tr><tr><td><code>multiplier</code></td><td>Coefficient for model prediction calibration.</td><td>FLOAT</td><td>1.951868</td></tr><tr><td><code>version</code></td><td>Model/data record version.</td><td>INT</td><td>20240201</td></tr></tbody></table>
-
-## Custom Analytics
-
-Every dataset has some custom Reports, Plots, and Computations that has been preloaded for quick execution and vizualisation.
-
-***
-
-### Reports
-
-Generate insightful summary reports to understand bankruptcy trends:
-
-*   **Top Sector Predictions:**
-
-    ```python
-    sov.report("bankruptcy", report_type="sector-top")
-    ```
-
-    This report filters sectors with the highest bankruptcy prediction scores.
-*   **Monthly Sector Change Summary:**
-
-    ```python
-    sov.report("bankruptcy", report_type="sector-change")
-    ```
-
-    Track monthly prediction changes across different sectors.
-
-### Plots
-
-Visualize the data with a variety of chart types to enhance understanding:
-
-*   **Bankruptcy Comparison Chart:**
-
-    ```python
-    sov.plot('bankruptcy', chart_type='compare')
-    ```
-
-    Compare bankruptcy probabilities across different tickers.
-*   **Feature Importance Over Time:**
-
-    ```python
-    sov.plot("bankruptcy", chart_type="shapley", tickers=["Ticker"])
-    ```
-
-    Examine how feature importance values evolve over time.
-*   **Bankruptcy vs. Security Price Chart:**
-
-    ```python
-    sov.plot("bankruptcy", chart_type="line", tickers=["Ticker"])
-    ```
-
-    Analyze the relationship between bankruptcy probabilities and stock prices.
-*   **PCA Similarity Plot:**
-
-    ```python
-    sov.plot("bankruptcy", chart_type="pca", tickers=["Ticker"])
-    ```
-
-    Explore the principal component analysis to identify similar tickers.
-*   **Correlation Plot:**
-
-    ```python
-    sov.plot("bankruptcy", chart_type="similar", tickers=["Ticker"])
-    ```
-
-    Discover correlated stocks based on bankruptcy risk profiles.
-
-### Computations
-
-Leverage advanced computational tools for deeper analysis:
-
-*   **Distance Matrix:**
-
-    ```python
-    sov.compute('distance-matrix', on="attribute", df=dataframe)
-    ```
-
-    Assess the similarity between entities based on selected attributes.
-*   **Percentile Calculation:**
-
-    ```python
-    sov.compute('percentile', on="attribute", df=dataframe)
-    ```
-
-    Calculate the relative standing of values within a dataset.
-*   **Feature Mapping:**
-
-    ```python
-    sov.compute('map-accounting-features', df=dataframe)
-    ```
-
-    Map accounting features to standardized metrics.
-*   **PCA Calculation:**
-
-    ```python
-    sov.compute('pca', df=dataframe)
-    ```
-
-    Perform principal component analysis for dimensionality reduction.
+<table><thead><tr><th width="237">Column</th><th>Description</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><code>ticker</code></td><td>Stock ticker symbol.</td><td>object</td><td>"AAPL"</td></tr><tr><td><code>date</code></td><td>Date when the data was recorded.</td><td>datetime64[ns]</td><td>2023-09-30</td></tr><tr><td><code>target</code></td><td>Target variable for predictions.</td><td>float64</td><td>0.05</td></tr><tr><td><code>future_returns</code></td><td>Future returns of the stock.</td><td>float32</td><td>0.10</td></tr><tr><td><code>prediction</code></td><td>Predicted probability from the model.</td><td>float64</td><td>1.25</td></tr><tr><td><code>bottom_prediction</code></td><td>Lower bound of the prediction interval.</td><td>float64</td><td>1.20</td></tr><tr><td><code>top_prediction</code></td><td>Upper bound of the prediction interval.</td><td>float64</td><td>1.30</td></tr><tr><td><code>standard_deviation</code></td><td>Standard deviation of the predictions.</td><td>float64</td><td>0.02</td></tr><tr><td><code>bottom_conformal</code></td><td>Lower bound of the conformal prediction interval.</td><td>float64</td><td>1.18</td></tr><tr><td><code>top_conformal</code></td><td>Upper bound of the conformal prediction interval.</td><td>float64</td><td>1.32</td></tr><tr><td><code>slope</code></td><td>Slope derived from the rolling regression of predictions over a window.</td><td>float64</td><td>0.003</td></tr></tbody></table>
 
 ***
 
