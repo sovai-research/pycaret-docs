@@ -15,6 +15,7 @@
 * [📬 Price Breakout Prediction](datasets/breakout.md)
 * [📬 Turing Risk Index](datasets/breakout-1.md)
 * [📬 Accounting Data](datasets/breakout-2.md)
+* [📬 Financial Ratios](datasets/ratios.md)
 * [🏰 Institutional Holdings](datasets/institutional.md)
 * [🗣 Insider Trading](datasets/institutional-1.md)
 * [📈 Price Breakout](datasets/breakout-3.md)
