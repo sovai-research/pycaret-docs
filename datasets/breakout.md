@@ -4,7 +4,7 @@ description: >-
   Equities.
 ---
 
-# 📬 Price Breakout Prediction
+# 🎢 Price Breakout Prediction
 
 {% hint style="info" %}
 Daily predictions arrive between 11 pm - 4 am before market open in the US.

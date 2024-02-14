@@ -1,10 +1,10 @@
 ---
 description: >-
-  More than 80+ financial ratios calculated from financial statement and market
-  data.
+  Here we develop three tables to develop a final score of corporate risk to US
+  equities.
 ---
 
-# 📬 Corporate Risk Indicators
+# ⭕ Corporate Risk Indicators
 
 {% hint style="info" %}
 Data arrives late Friday night 11 pm - 12 am after market close US-EST time.&#x20;
@@ -16,11 +16,11 @@ Data arrives late Friday night 11 pm - 12 am after market close US-EST time.&#x2
 
 Diversified selection of ratios for factor development or bottum-up equity selection strategies.&#x20;
 
-### Data Access
+## Data Access
 
-#### Financial Statement Risk
+#### Accounting Risk
 
-Fetch the latest index data using the SDK:
+**Accounting Table**: This table offers a snapshot of a company’s financial status based on standard accounting metrics. It is crucial for investors to assess a company's profitability, liquidity, and solvency.
 
 ```python
 from sovai import sov
@@ -31,7 +31,7 @@ df_actg_risk = sov.data("corprisk/accounting")
 
 #### Financial Event Risk
 
-Fetch the latest index data using the SDK:
+**Events Table**: Contains data on significant corporate events that could impact a company's financial status or investor perception. This includes mergers, acquisitions, executive changes, regulatory shifts, and other material events.
 
 ```python
 from sovai import sov
@@ -42,22 +42,37 @@ df_events_risk = sov.data("corprisk/events")
 
 #### Misstatement Risk
 
-Fetch the latest index data using the SDK:
+**Misstatement Table**: This table highlights the potential risks of financial misstatements in a company’s reporting. A higher score in this table indicates a greater risk or occurrence of financial misstatements, which can be a red flag for investors.
 
 ```python
 from sovai import sov
 df_miss_risk = sov.data("corprisk/misstatement")
 ```
 
-###
+<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
-### Financial Risks Dictionary
+#### Aggregated Risks
 
-<table><thead><tr><th width="224">Name</th><th width="304">Description</th><th width="114">Sentiment</th><th>Type</th></tr></thead><tbody><tr><td>piotroski_score</td><td>A score based on financial strength indicators from the Piotroski F-score</td><td>Positive</td><td>float64</td></tr><tr><td>altman_z_score</td><td>A score measuring a company's financial health and bankruptcy risk</td><td>Positive</td><td>float64</td></tr><tr><td>graham_number</td><td>A figure that measures a stock's fundamental value named after Benjamin Graham</td><td>Positive</td><td>float64</td></tr><tr><td>lynch_fair_value</td><td>An estimation of fair value using Peter Lynch's valuation method</td><td>Positive</td><td>float64</td></tr><tr><td>yacktman_frr</td><td>Yacktman's Forward Rate of Return, a measure of expected return</td><td>Positive</td><td>float64</td></tr><tr><td>ortiz_liquidity</td><td>A measure of asset liquidity relative to market assets</td><td>Positive</td><td>float64</td></tr><tr><td>tangibility</td><td>A ratio indicating the tangible assets held by a company</td><td>Positive</td><td>float64</td></tr><tr><td>age</td><td>The age of the company or asset in question</td><td>Positive</td><td>float64</td></tr><tr><td>oshaughnessy_1</td><td>A composite score based on value factors as per James O'Shaughnessy</td><td>Positive</td><td>float64</td></tr><tr><td>oshaughnessy_2</td><td>Another composite score following James O'Shaughnessy's methodology</td><td>Positive</td><td>float64</td></tr><tr><td>oshaughnessy_3</td><td>A third composite score by James O'Shaughnessy focusing on different factors</td><td>Negative</td><td>float64</td></tr><tr><td>beneish_m_score</td><td>A score to measure the probability of a firm manipulating its earnings</td><td>Negative</td><td>float64</td></tr><tr><td>erp5</td><td>A ranking system for stocks combining value and quality measures</td><td>Negative</td><td>float64</td></tr><tr><td>sloan_ratio</td><td>A ratio to identify earnings manipulation by comparing accruals to net income</td><td>Negative</td><td>float64</td></tr><tr><td>ohlson_score</td><td>A probability score of corporate financial distress</td><td>Negative</td><td>float64</td></tr><tr><td>dechow_equity_duration</td><td>A measure of the sustainability of a firm's earnings</td><td>Negative</td><td>float64</td></tr><tr><td>kaplan_zingales_index</td><td>An index measuring a company's financial constraints</td><td>Negative</td><td>float64</td></tr></tbody></table>
+Accounting, Event, and Misstatement Risks combined together:
+
+```python
+from sovai import sov
+df_miss_risk = sov.data("corprisk/risks")
+```
+
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+
+## Data Dictionaries
 
 
 
-### Financial Event Dictionary
+### Financial Risks&#x20;
+
+<table><thead><tr><th width="224">Name</th><th width="304">Description</th><th width="114">Sentiment</th><th>Type</th></tr></thead><tbody><tr><td>average</td><td>The mean value of various indicators, scaled and ranked over a rolling period</td><td>Negative</td><td>float64</td></tr><tr><td>industryadjustedavg</td><td>Industry-adjusted average value</td><td>Negative</td><td>float64</td></tr><tr><td>piotroski_score</td><td>A score based on financial strength indicators from the Piotroski F-score</td><td>Positive</td><td>float64</td></tr><tr><td>altman_z_score</td><td>A score measuring a company's financial health and bankruptcy risk</td><td>Positive</td><td>float64</td></tr><tr><td>graham_number</td><td>A figure that measures a stock's fundamental value named after Benjamin Graham</td><td>Positive</td><td>float64</td></tr><tr><td>lynch_fair_value</td><td>An estimation of fair value using Peter Lynch's valuation method</td><td>Positive</td><td>float64</td></tr><tr><td>yacktman_frr</td><td>Yacktman's Forward Rate of Return, a measure of expected return</td><td>Positive</td><td>float64</td></tr><tr><td>ortiz_liquidity</td><td>A measure of asset liquidity relative to market assets</td><td>Positive</td><td>float64</td></tr><tr><td>tangibility</td><td>A ratio indicating the tangible assets held by a company</td><td>Positive</td><td>float64</td></tr><tr><td>age</td><td>The age of the company or asset in question</td><td>Positive</td><td>float64</td></tr><tr><td>oshaughnessy_1</td><td>A composite score based on value factors as per James O'Shaughnessy</td><td>Positive</td><td>float64</td></tr><tr><td>oshaughnessy_2</td><td>Another composite score following James O'Shaughnessy's methodology</td><td>Positive</td><td>float64</td></tr><tr><td>oshaughnessy_3</td><td>A third composite score by James O'Shaughnessy focusing on different factors</td><td>Negative</td><td>float64</td></tr><tr><td>beneish_m_score</td><td>A score to measure the probability of a firm manipulating its earnings</td><td>Negative</td><td>float64</td></tr><tr><td>erp5</td><td>A ranking system for stocks combining value and quality measures</td><td>Negative</td><td>float64</td></tr><tr><td>sloan_ratio</td><td>A ratio to identify earnings manipulation by comparing accruals to net income</td><td>Negative</td><td>float64</td></tr><tr><td>ohlson_score</td><td>A probability score of corporate financial distress</td><td>Negative</td><td>float64</td></tr><tr><td>dechow_equity_duration</td><td>A measure of the sustainability of a firm's earnings</td><td>Negative</td><td>float64</td></tr><tr><td>kaplan_zingales_index</td><td>An index measuring a company's financial constraints</td><td>Negative</td><td>float64</td></tr></tbody></table>
+
+
+
+### Financial Event Risks
 
 Some of these events are difficult to map to negative and positive sentiment, however, for calculating the average, we had to apply a mapping. Moreover, in the real table all values have been transformed into negative values.&#x20;
 
@@ -65,44 +80,29 @@ Some of these events are difficult to map to negative and positive sentiment, ho
 
 
 
-### Misstatement Dictionary
+### Misstatement Risks
 
 For the misstatements, all of the variables have been changed into negative indicators, so that when the company overreports the financial health and corrects it later on, that is a negative sign.&#x20;
 
-| Name                 | Description                                                     | Sentiment | Type    |
-| -------------------- | --------------------------------------------------------------- | --------- | ------- |
-| cashneq              | Cash and cash equivalents                                       | Positive  | float64 |
-| ppnenet              | Property, plant, and equipment, net                             | Positive  | float64 |
-| sbcomp               | Stock-based compensation                                        | Negative  | float64 |
-| revenue              | Total revenue                                                   | Positive  | float64 |
-| retearn              | Retained earnings                                               | Positive  | float64 |
-| payables             | Accounts payable                                                | Negative  | float64 |
-| opinc                | Operating income                                                | Positive  | float64 |
-| opex                 | Operating expenses                                              | Negative  | float64 |
-| netinc               | Net income                                                      | Positive  | float64 |
-| ncfo                 | Net cash flow from operating activities                         | Positive  | float64 |
-| ncfi                 | Net cash flow from investing activities                         | Positive  | float64 |
-| liabilitiesnc        | Non-current liabilities                                         | Negative  | float64 |
-| liabilitiesc         | Current liabilities                                             | Negative  | float64 |
-| intexp               | Interest expense                                                | Negative  | float64 |
-| intangibles          | Intangible assets                                               | Positive  | float64 |
-| fcf                  | Free cash flow                                                  | Positive  | float64 |
-| ebitda               | Earnings before interest, taxes, depreciation, and amortization | Positive  | float64 |
-| depamor              | Depreciation and amortization                                   | Negative  | float64 |
-| deferredrev          | Deferred revenue                                                | Negative  | float64 |
-| assetsnc             | Non-current assets                                              | Positive  | float64 |
-| assetsc              | Current assets                                                  | Positive  | float64 |
-| misstatmentper\_neg  | Proportion of negative misstatements                            | Negative  | float64 |
-| misstatmentper\_pos  | Proportion of positive misstatements                            | Positive  | float64 |
-| misstate\_weight     | Weighted median of misstatements                                | Mixed     | float64 |
-| emptycounts          | Proportion of empty or missing data points                      | Negative  | float64 |
-| misstatement\_signal | Overall signal indicating the presence of misstatements         | Mixed     | float64 |
-
-<table><thead><tr><th width="169">Name</th><th width="361">Description</th><th>Type</th></tr></thead><tbody><tr><td>cashneq</td><td>Cash and cash equivalents</td><td>float64</td></tr><tr><td>ppnenet</td><td>Property, plant, and equipment, net</td><td>float64</td></tr><tr><td>sbcomp</td><td>Stock-based compensation</td><td>float64</td></tr><tr><td>revenue</td><td>Total revenue</td><td>float64</td></tr><tr><td>retearn</td><td>Retained earnings</td><td>float64</td></tr><tr><td>payables</td><td>Accounts payable</td><td>float64</td></tr><tr><td>opinc</td><td>Operating income</td><td>float64</td></tr><tr><td>opex</td><td>Operating expenses</td><td>float64</td></tr><tr><td>netinc</td><td>Net income</td><td>float64</td></tr><tr><td>ncfo</td><td>Net cash flow from operating activities</td><td>float64</td></tr><tr><td>ncfi</td><td>Net cash flow from investing activities</td><td>float64</td></tr><tr><td>liabilitiesnc</td><td>Non-current liabilities</td><td>float64</td></tr><tr><td>liabilitiesc</td><td>Current liabilities</td><td>float64</td></tr><tr><td>intexp</td><td>Interest expense</td><td>float64</td></tr><tr><td>intangibles</td><td>Intangible assets</td><td>float64</td></tr><tr><td>fcf</td><td>Free cash flow</td><td>float64</td></tr><tr><td>ebitda</td><td>Earnings before interest, taxes, depreciation, and amortization</td><td>float64</td></tr><tr><td>depamor</td><td>Depreciation and amortization</td><td>float64</td></tr><tr><td>deferredrev</td><td>Deferred revenue</td><td>float64</td></tr><tr><td>assetsnc</td><td>Non-current assets</td><td>float64</td></tr><tr><td>assetsc</td><td>Current assets</td><td>float64</td></tr><tr><td>average</td><td>Average of various financial indicators (context-specific)</td><td>float64</td></tr><tr><td>industryadjustedavg</td><td>Industry-adjusted average of indicators</td><td>float64</td></tr><tr><td>misstatement_pctl</td><td>Misstatement percentile based on the average of features</td><td>float64</td></tr><tr><td>misstatmentper_neg</td><td>Misstatement percentage (negative context)</td><td>float64</td></tr><tr><td>misstatmentper_pos</td><td>Misstatement percentage (positive context)</td><td>float64</td></tr></tbody></table>
+<table><thead><tr><th width="231">Name</th><th>Description</th><th>Sentiment</th><th>Type</th></tr></thead><tbody><tr><td>average</td><td>Average misstatements accross all indicators</td><td>Negative</td><td>float64</td></tr><tr><td>industryadustedavg</td><td>Industry adjusted average</td><td>Negative</td><td>float64</td></tr><tr><td>misstatementper_neg</td><td>Misstatement percentage</td><td>Negative</td><td>float64</td></tr><tr><td>misstatementper_pos</td><td>Misstatement percentage</td><td>Positive</td><td>float64</td></tr><tr><td>cashneq</td><td>Cash and cash equivalents</td><td>Positive</td><td>float64</td></tr><tr><td>ppnenet</td><td>Property, plant, and equipment, net</td><td>Positive</td><td>float64</td></tr><tr><td>sbcomp</td><td>Stock-based compensation</td><td>Negative</td><td>float64</td></tr><tr><td>revenue</td><td>Total revenue</td><td>Positive</td><td>float64</td></tr><tr><td>retearn</td><td>Retained earnings</td><td>Positive</td><td>float64</td></tr><tr><td>payables</td><td>Accounts payable</td><td>Negative</td><td>float64</td></tr><tr><td>opinc</td><td>Operating income</td><td>Positive</td><td>float64</td></tr><tr><td>opex</td><td>Operating expenses</td><td>Negative</td><td>float64</td></tr><tr><td>netinc</td><td>Net income</td><td>Positive</td><td>float64</td></tr><tr><td>ncfo</td><td>Net cash flow from operating activities</td><td>Positive</td><td>float64</td></tr><tr><td>ncfi</td><td>Net cash flow from investing activities</td><td>Positive</td><td>float64</td></tr><tr><td>liabilitiesnc</td><td>Non-current liabilities</td><td>Negative</td><td>float64</td></tr><tr><td>liabilitiesc</td><td>Current liabilities</td><td>Negative</td><td>float64</td></tr><tr><td>intexp</td><td>Interest expense</td><td>Negative</td><td>float64</td></tr><tr><td>intangibles</td><td>Intangible assets</td><td>Positive</td><td>float64</td></tr><tr><td>fcf</td><td>Free cash flow</td><td>Positive</td><td>float64</td></tr><tr><td>ebitda</td><td>Earnings before interest, taxes, depreciation, and amortization</td><td>Positive</td><td>float64</td></tr><tr><td>depamor</td><td>Depreciation and amortization</td><td>Negative</td><td>float64</td></tr><tr><td>deferredrev</td><td>Deferred revenue</td><td>Negative</td><td>float64</td></tr><tr><td>assetsnc</td><td>Non-current assets</td><td>Positive</td><td>float64</td></tr><tr><td>assetsc</td><td>Current assets</td><td>Positive</td><td>float64</td></tr></tbody></table>
 
 
 
+### Aggregated Risks
 
+<table><thead><tr><th width="241">Name</th><th width="313">Description</th><th>Type</th></tr></thead><tbody><tr><td>ticker</td><td>Stock ticker symbol identifying the company</td><td>string</td></tr><tr><td>date</td><td>Date of the record</td><td>date</td></tr><tr><td>accounting</td><td>Score or value derived from accounting data</td><td>float64</td></tr><tr><td>accounting_ind_adjs</td><td>Adjusted score or value for accounting data based on industry standards</td><td>float64</td></tr><tr><td>misstatement</td><td>Score or value indicating the likelihood or extent of financial misstatements</td><td>float64</td></tr><tr><td>misstatement_ind_adjs</td><td>Adjusted score or value for misstatement data based on industry standards</td><td>float64</td></tr><tr><td>events</td><td>Score or value related to specific corporate events</td><td>float64</td></tr><tr><td>events_ind_adjs</td><td>Adjusted score or value for event data based on industry standards</td><td>float64</td></tr><tr><td>risk</td><td>Score or value indicating the level of total financial risk</td><td>float64</td></tr><tr><td>risk_ind_adjs</td><td>Adjusted score based on industry averages</td><td>float64</td></tr></tbody></table>
+
+
+
+## Explanations
+
+### Importance for Investors
+
+Understanding these tables is essential for investors:
+
+* **Risk Assessment**: By analyzing the Misstatement and its industry-adjusted tables, investors can gauge the risk associated with a company's financial reporting.
+* **Comparative Analysis**: The industry-adjusted tables enable investors to compare companies within the same sector on a like-for-like basis, making the analysis more relevant and accurate.
+* **Informed Decision-Making**: Comprehensive data covering raw financials and industry-adjusted scores empowers investors to make well-informed investment decisions.
 
 
 

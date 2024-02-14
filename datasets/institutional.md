@@ -2,7 +2,7 @@
 description: Videos to learn more about PyCaret
 ---
 
-# 🏰 Institutional Holdings
+# 🗞 Institutional Holdings
 
 This should be nothing more than the discerption of the dataset, with dictionaries etc.&#x20;
 

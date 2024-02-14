@@ -4,7 +4,7 @@ description: >-
   data.
 ---
 
-# 📬 Financial Ratios
+# 🟩 Financial Ratios
 
 {% hint style="info" %}
 Data arrives late Friday night 11 pm - 12 am after market close US-EST time.&#x20;

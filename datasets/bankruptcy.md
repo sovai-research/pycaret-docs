@@ -2,7 +2,7 @@
 description: Chapter 7 and Chapter 11 Predictions made available to Sovai subscribers.
 ---
 
-# 📬 Bankruptcy Predictions
+# 🗃 Bankruptcy Predictions
 
 {% hint style="info" %}
 Monthly corporate bankruptcy predictions arrive the **2nd of every month**_._

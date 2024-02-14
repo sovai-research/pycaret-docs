@@ -4,7 +4,7 @@ description: >-
   by investors.
 ---
 
-# 📬 Turing Risk Index
+# 🏳 Turing Risk Index
 
 {% hint style="info" %}
 Daily index arrive between 11 pm - 4 am before market open in the US.
