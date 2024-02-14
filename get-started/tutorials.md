@@ -11,5 +11,5 @@ description: Official tutorials created by the developers of Sovai.
 {% hint style="info" %}
 For more examples, check out the [Notebook Examples](broken-reference) page.
 
-Looking for video tutorials? [find here.](../datasets/institutional.md)
+Looking for video tutorials? [find here.](broken-reference)
 {% endhint %}

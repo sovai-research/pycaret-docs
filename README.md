@@ -42,7 +42,7 @@ The library comes preloaded with 10s of unique datasets like accounting data, ra
 | 📋 [**Examples**](broken-reference)\*\*\*\*                                 | Example notebooks.                      |
 | 📙 [**Blog**](broken-reference)\*\*\*\*                                     | Tutorials and articles by contributors. |
 | 📚 [**API Reference**](https://pycaret.readthedocs.io/en/latest/index.html) | The detailed API docs of PyCaret        |
-| 📺 [**Video Tutorials**](datasets/institutional.md)\*\*\*\*                 | Our video tutorial from various events. |
+| 📺 [**Video Tutorials**](broken-reference)\*\*\*\*                          | Our video tutorial from various events. |
 | 📢 [**Discussions**](https://github.com/pycaret/pycaret/discussions)        | Engage with community and contributors. |
 | 🛠️ [**Changelog**](get-started/release-notes.md)\*\*\*\*                   | Changes and version history.            |
 | :question:[**FAQs**](broken-reference)                                      | Frequently Asked Questions              |

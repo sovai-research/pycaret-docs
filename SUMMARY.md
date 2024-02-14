@@ -17,8 +17,8 @@
 * [🈁 Accounting Data](datasets/breakout-2.md)
 * [🟩 Financial Ratios](datasets/ratios.md)
 * [⭕ Corporate Risk Indicators](datasets/corprisk.md)
+* [🏦 Institutional Trading](datasets/institutional.md)
 * [🏗 Government Contracts](datasets/spending.md)
-* [🗞 Institutional Holdings](datasets/institutional.md)
 * [🗣 Insider Trading](datasets/institutional-1.md)
 
 ## Core Software
