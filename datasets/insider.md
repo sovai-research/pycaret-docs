@@ -4,7 +4,7 @@ description: >-
   equities. More than 100+ institutional trading variables.
 ---
 
-# 🏦 Institutional Trading
+# 🗣 Insider Trading
 
 {% hint style="info" %}
 Data is updated quarterly as data arrives after market close US-EST time.&#x20;

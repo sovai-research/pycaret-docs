@@ -18,8 +18,9 @@
 * [🟩 Financial Ratios](datasets/ratios.md)
 * [⭕ Corporate Risk Indicators](datasets/corprisk.md)
 * [🏦 Institutional Trading](datasets/institutional.md)
+* [🗣 Insider Trading](datasets/insider.md)
+* [📰 News Sentiment](datasets/news.md)
 * [🏗 Government Contracts](datasets/spending.md)
-* [🗣 Insider Trading](datasets/institutional-1.md)
 
 ## Core Software
 
