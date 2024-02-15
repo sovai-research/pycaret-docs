@@ -20,6 +20,7 @@
 * [🏦 Institutional Trading](datasets/institutional.md)
 * [🗣 Insider Trading](datasets/insider.md)
 * [📰 News Sentiment](datasets/news.md)
+* [🏁 Wikipedia Views](datasets/wiki.md)
 * [🏗 Government Contracts](datasets/spending.md)
 
 ## Core Software
