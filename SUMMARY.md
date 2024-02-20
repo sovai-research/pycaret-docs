@@ -20,6 +20,7 @@
 * [🏦 Institutional Trading](datasets/institutional.md)
 * [🗣 Insider Trading](datasets/insider.md)
 * [📰 News Sentiment](datasets/news.md)
+* [📰 Core Economic Data](datasets/news-1.md)
 * [🏁 Wikipedia Views](datasets/wiki.md)
 * [🏗 Government Contracts](datasets/spending.md)
 * [🏗 Employee Visa](datasets/spending-1.md)
