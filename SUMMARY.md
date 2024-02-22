@@ -9,12 +9,15 @@
 * [⭐ Tutorials](get-started/tutorials.md)
 * [⚒ Release Notes](get-started/release-notes.md)
 
+## Predictions
+
+* [🗃 Bankruptcy Predictions](predictions/bankruptcy.md)
+* [🎢 Price Breakout Prediction](predictions/breakout.md)
+
 ## Datasets
 
-* [🗃 Bankruptcy Predictions](datasets/bankruptcy.md)
-* [🎢 Price Breakout Prediction](datasets/breakout.md)
-* [🏳 Turing Risk Index](datasets/breakout-1.md)
-* [🈁 Accounting Data](datasets/breakout-2.md)
+* [🏳 Turing Risk Index](datasets/breakout.md)
+* [🈁 Accounting Data](datasets/breakout-1.md)
 * [🟩 Financial Ratios](datasets/ratios.md)
 * [⭕ Corporate Risk Indicators](datasets/corprisk.md)
 * [🏦 Institutional Trading](datasets/institutional.md)
