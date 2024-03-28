@@ -7,12 +7,12 @@ description: >-
 # 🎢 Price Breakout Prediction
 
 {% hint style="info" %}
-Daily predictions arrive between 11 pm - 4 am before market open in the US.
+Daily predictions arrive between 11 pm - 4 am before market open in the US for 13,000+ stocks.
 {% endhint %}
 
 `Tutorials` are the best documentation — <mark style="color:blue;">`Price Breakout Prediction`</mark>
 
-<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td>Input Datasets</td><td>Historical Stock Prices, Trading Volumes, Technical Indicators</td></tr><tr><td>Models Used</td><td>Classification Algorithms, Regression Models, Conformal Predictors</td></tr><tr><td>Model Outputs</td><td>Price Movement Predictions, Probability Scores, Confidence Intervals</td></tr></tbody></table>
+<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td>Input Datasets</td><td>Historical Stock Prices, Trading Volumes, Technical Indicators, Order Book.</td></tr><tr><td>Models Used</td><td>Classification Algorithms, Regression Models, Conformal Predictors</td></tr><tr><td>Model Outputs</td><td>Price Movement Predictions, Probability Scores, Confidence Intervals</td></tr></tbody></table>
 
 This document provides guidance on utilizing the Breakout Prediction SDK to identify potential breakout stocks over the next 30-60 days for US Equities.&#x20;
 
@@ -114,15 +114,3 @@ Several machine learning models are trained using the prepared dataset:
 
 The model can be applied to new data to generate predictions for the likelihood of price increases. It utilizes the trained classifiers and regressors to provide both point estimates and confidence intervals for these predictions.
 
-
-
-### Potential Use-cases
-
-1. **Bankruptcy Prediction Analysis**: Offer insights into predicted corporate bankruptcies and identify key factors, clarifying main drivers across different cycles.
-2. **Variable Impact Breakdown**: Analyze how each individual variable affects bankruptcy predictions, providing in-depth feature contribution insights.
-3. **Temporal Feature Distribution Analysis**: Reveal how variables contribute to predictions over time, emphasizing key features in forecasting models.
-4. **Feature Impact Visualization**: Highlights how different factors influence predictions.
-5. **Correlation Discovery**: Identify stocks with similar bankruptcy probability trends, revealing correlated market behaviors.
-6. **Probability Shift Overview**: Showcase changes in bankruptcy probabilities among correlated stocks, providing a comprehensive market perspective.
-7. **Sentiment Inversion Analysis**: Convert bankruptcy predictions into positive sentiment indicators to gauge potential impacts on stock returns.
-8. **Behavioral Similarity Mapping**: Locate stocks with similar behaviors to a selected reference, based on bankruptcy trends and PCA feature analysis.

@@ -54,8 +54,6 @@ df_bankrupt = sov.data('bankruptcy/daily', tickers=["MSFT","TSLA","META"])
 
 The daily probabilities are experimental, and have a very short history of just a couple of months.&#x20;
 
-###
-
 ### Feature Importance (Shapleys)
 
 ```python

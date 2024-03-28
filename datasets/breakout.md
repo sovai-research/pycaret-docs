@@ -1,10 +1,11 @@
 ---
 description: >-
   Use this indicator to understand the trajectory of global risks as perceived
-  by investors.
+  by investors. Here we supply the raw data, you might find it more favorable to
+  use the dashboard.
 ---
 
-# 🏳 Turing Risk Index
+# 🏳️ Turing Risk Index
 
 {% hint style="info" %}
 Daily index arrive between 11 pm - 4 am before market open in the US.
@@ -14,7 +15,7 @@ Daily index arrive between 11 pm - 4 am before market open in the US.
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td>Input Datasets</td><td>Hundreds of leading indicators.</td></tr><tr><td>Models Used</td><td>Imputation Models, Time Series Forecast Models</td></tr><tr><td>Model Outputs</td><td>Market, Business, and Political risk indicators,</td></tr></tbody></table>
 
-This indicator uses leading as opposed to lagging inputs. The constituents of the indicator has been selected for their recessionary predictive qualities.&#x20;
+This indicator uses leading as opposed to lagging inputs. The constituents of the indicator has been selected for their predictive qualities.&#x20;
 
 The final Turing Index is a simple average of Market, Business, and Political risk.
 
@@ -145,8 +146,6 @@ The Risk Database is a sophisticated analytical tool designed to evaluate and fo
 #### Trend Analysis
 
 **Heatmap Visualization & Historical Comparison**: Utilize visual trend analysis and historical parallels to anticipate shifts in the risk environment and adapt investment strategies accordingly.
-
-
 
 
 
