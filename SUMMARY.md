@@ -9,25 +9,29 @@
 * [⭐ Tutorials](get-started/tutorials.md)
 * [⚒️ Release Notes](get-started/release-notes.md)
 
-## Predictions
+## Prediction Datasets
 
-* [🗃️ Bankruptcy Predictions](predictions/bankruptcy.md)
-* [🎢 Price Breakout Prediction](predictions/breakout.md)
+* [🎢 Price Breakout Prediction](prediction-datasets/breakout.md)
+* [🗃️ Bankruptcy Predictions](prediction-datasets/bankruptcy.md)
+* [🗣️ Insider Flow Prediction](prediction-datasets/insider.md)
 
-## Datasets
+## Core Datasets
 
-* [🏳️ Turing Risk Index](datasets/breakout.md)
-* [🈁 Accounting Data](datasets/breakout-1.md)
-* [🟩 Financial Ratios](datasets/ratios.md)
-* [⭕ Corporate Risk Indicators](datasets/corprisk.md)
-* [🏦 Institutional Trading](datasets/institutional.md)
-* [🗣️ Insider Trading](datasets/insider.md)
-* [📰 News Sentiment](datasets/news.md)
-* [🚦 Factor Signals](datasets/news-1.md)
-* [📰 Core Economic Data](datasets/news-2.md)
-* [🏁 Wikipedia Views](datasets/wiki.md)
-* [🏗️ Government Contracts](datasets/spending.md)
-* [🏗️ Employee Visa](datasets/spending-1.md)
+* [🏦 Institutional Trading](core-datasets/institutional.md)
+* [🏳️ Turing Risk Index](core-datasets/breakout.md)
+* [🈁 Accounting Data](core-datasets/breakout-1.md)
+* [🟩 Financial Ratios](core-datasets/ratios.md)
+* [⭕ Corporate Risk Indicators](core-datasets/corprisk.md)
+* [📰 News Sentiment](core-datasets/news.md)
+* [🚦 Factor Signals](core-datasets/news-1.md)
+* [📰 Core Economic Data](core-datasets/news-2.md)
+* [🏁 Wikipedia Views](core-datasets/wiki.md)
+* [🏗️ Government Contracts](core-datasets/spending.md)
+* [🏗️ Employee Visa](core-datasets/spending-1.md)
+
+## Sectorial Datasets
+
+* [🏰 Request Data](sectorial-datasets/institutional.md)
 
 ## Core Software
 
@@ -40,12 +44,6 @@
 * [🏰 Portfolio Optimization](advanced-studies/institutional.md)
 * [🗣️ Causal Analysis](advanced-studies/institutional-1.md)
 * [📬 Nowcasting](advanced-studies/cheat-sheet.md)
-
-## Demo Datasets
-
-* [🏰 Wallmart](demo-datasets/institutional.md)
-* [🗣️ Amazon](demo-datasets/institutional-1.md)
-* [📬 Yelp](demo-datasets/cheat-sheet.md)
 
 ## IMPORTANT LINKS
 
