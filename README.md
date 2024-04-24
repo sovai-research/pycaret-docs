@@ -33,13 +33,11 @@ Welcome to the most user-friendly **machine learning** and **data library** for 
 
 SovAI was founded in 2021 by Professor Derek Snow, after recognizing that:
 
-* Quality academic research are not perculating fast enough to asset managers.
-* Fundamental investors have no readily available solution to apply machine learning.&#x20;
-* Boutique asset managers and family offices cannot afford in-house data-scientist.&#x20;
+> * Quality academic research are not perculating fast enough to asset managers.
+> * Fundamental investors have no readily available solution to apply machine learning.&#x20;
+> * Boutique asset managers and family offices cannot afford in-house data-scientist.&#x20;
 
 <figure><img src=".gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src=".gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 
 The expected milestones have been laid out as far back as 2021, we are fortunate enough to only rely on public funding, by not relying on any external funding we can assure our independence.&#x20;
 
