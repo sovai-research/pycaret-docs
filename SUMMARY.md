@@ -9,29 +9,31 @@
 * [⭐ Tutorials](get-started/tutorials.md)
 * [⚒️ Release Notes](get-started/release-notes.md)
 
-## Prediction Datasets
+## Equity Datasets
 
-* [🎢 Price Breakout Prediction](prediction-datasets/breakout.md)
-* [🗃️ Bankruptcy Predictions](prediction-datasets/bankruptcy.md)
-* [🗣️ Insider Flow Prediction](prediction-datasets/insider.md)
+* [🎢 Price Breakout Prediction](equity-datasets/breakout.md)
+* [🗃️ Bankruptcy Predictions](equity-datasets/bankruptcy.md)
+* [🗣️ Insider Flow Prediction](equity-datasets/insider.md)
+* [🏦 Institutional Trading](equity-datasets/institutional.md)
+* [🈁 Accounting Data](equity-datasets/breakout-1.md)
+* [🟩 Financial Ratios](equity-datasets/ratios.md)
+* [⭕ Corporate Risk Indicators](equity-datasets/corprisk.md)
+* [📰 News Sentiment](equity-datasets/news.md)
+* [🏁 Wikipedia Views](equity-datasets/wiki.md)
+* [🏗️ Government Contracts](equity-datasets/spending.md)
+* [🏗️ Employee Visa](equity-datasets/spending-1.md)
+* [🚦 Factor Signals](equity-datasets/news-1.md)
 
-## Core Datasets
+## Economic Datasets
 
-* [🏦 Institutional Trading](core-datasets/institutional.md)
-* [🏳️ Turing Risk Index](core-datasets/breakout.md)
-* [🈁 Accounting Data](core-datasets/breakout-1.md)
-* [🟩 Financial Ratios](core-datasets/ratios.md)
-* [⭕ Corporate Risk Indicators](core-datasets/corprisk.md)
-* [📰 News Sentiment](core-datasets/news.md)
-* [🚦 Factor Signals](core-datasets/news-1.md)
-* [📰 Core Economic Data](core-datasets/news-2.md)
-* [🏁 Wikipedia Views](core-datasets/wiki.md)
-* [🏗️ Government Contracts](core-datasets/spending.md)
-* [🏗️ Employee Visa](core-datasets/spending-1.md)
+* [🏳️ Turing Risk Index](economic-datasets/breakout.md)
+* [📰 Core Economic Data](economic-datasets/news.md)
+* [📰 ETF Flows](economic-datasets/news-1.md)
 
 ## Sectorial Datasets
 
-* [🏰 Request Data](sectorial-datasets/institutional.md)
+* [🏰 Box Office Statistics](sectorial-datasets/institutional.md)
+* [🏰 Copy of Box Office Statistics](sectorial-datasets/institutional-1.md)
 
 ## Core Software
 
