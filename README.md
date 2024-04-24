@@ -37,11 +37,9 @@ SovAI was founded in 2021 by Professor Derek Snow, after recognizing that:
 * Fundamental investors have no readily available solution to apply machine learning.&#x20;
 * Boutique asset managers and family offices cannot afford in-house data-scientist.&#x20;
 
+<figure><img src=".gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
+
 <figure><img src=".gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
-
-The development of SovAI started with a simple concept, combine academic research with proprietory dataset and knowledge to create a shared solution for dynamic datasets and prediction models:
-
-<figure><img src=".gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
 
 The expected milestones have been laid out as far back as 2021, we are fortunate enough to only rely on public funding, by not relying on any external funding we can assure our independence.&#x20;
 
@@ -54,6 +52,10 @@ The software is built by alumni from the Alan Turing Institute, the Oxford-Man I
 SovAI is and will remain the most robust and simultaneously most affordable subscription product on the market. This will be gauranteed with an anytime refund. Don't like the outputs? Get all your money back.&#x20;
 
 <figure><img src=".gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
+
+Finally we have benefited from the input of the following four academic advisors that has been supporting us since the birth of SovAI.
+
+<figure><img src=".gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
 
 ### Forthcoming Datasets
 
