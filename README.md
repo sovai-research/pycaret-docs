@@ -39,7 +39,7 @@ SovAI was founded in 2021 by Professor Derek Snow, after recognizing that:
 
 <figure><img src=".gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
 
-The expected milestones have been laid out as far back as 2021, we are fortunate enough to only rely on public funding, by not relying on any external funding we can assure our independence.&#x20;
+The expected milestones have been laid out as far back as 2021, we are fortunate enough to only rely on private funding, by not relying on any external funding we can assure our independence.&#x20;
 
 <figure><img src=".gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
