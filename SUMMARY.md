@@ -33,7 +33,7 @@
 ## Sectorial Datasets
 
 * [🏰 Box Office Statistics](sectorial-datasets/institutional.md)
-* [🏰 Copy of Box Office Statistics](sectorial-datasets/institutional-1.md)
+* [🏰 Airbnb](sectorial-datasets/institutional-1.md)
 
 ## Core Software
 
