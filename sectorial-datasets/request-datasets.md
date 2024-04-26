@@ -8,9 +8,13 @@ If you are an annual subcriber then you can request new datasets. For example we
 
 
 
-### Earnings Conference Call - Audio
+### Amazon - Product Data
 
+### Wallmart - Product Data
 
+### Earnings Conference Call - Text + [Audio](https://storage.googleapis.com/public-quant/input/earnings/EarningscallbizAmarinCorporationplc8-3-2022.mp3)
+
+{% file src="../.gitbook/assets/BrinksCompany(The)8-3-2022.txt" %}
 
 ### **Glassdoor Employee Reviews**
 
@@ -36,31 +40,25 @@ If you are an annual subcriber then you can request new datasets. For example we
 
 {% file src="../.gitbook/assets/privacy_depth.csv" %}
 
-### Amazon - Product Data
-
-### Wallmart - Product Data
-
-### ESG - CSR Hub
+### ESG Ratings - CSR Hub
 
 {% file src="../.gitbook/assets/2023-07-17csrhub-companies.csv" %}
 
-### ESG - MSCI
+### ESG Ratings - MSCI
 
 {% file src="../.gitbook/assets/2023-05-25MSCI-Data.csv" %}
 
-### ESG - Wikimetrics
+### ESG Ratings - Wikimetrics
 
 {% file src="../.gitbook/assets/2023-08-28wikimetrics.txt" %}
 
-### ESG - Sustainalytics
+### ESG Ratings - Sustainalytics
 
 {% file src="../.gitbook/assets/2023-05-25sustainanalytics.csv" %}
 
 ### Google Trends - Search Pressure
 
 {% file src="../.gitbook/assets/google_search_pressure.csv" %}
-
-###
 
 ### Corporate Violations Data
 
