@@ -5,7 +5,7 @@ description: >-
   few months notice.
 ---
 
-# 🏰 Request Data
+# 🎦 Box Office Stats
 
 Amazon Products
 

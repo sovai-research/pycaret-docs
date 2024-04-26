@@ -4,7 +4,7 @@ description: >-
   equities.
 ---
 
-# 🏗 Employee Visa
+# 🇱🇻 Employee Visa
 
 {% hint style="info" %}
 Data arrives late Friday night 11 pm - 12 am after market close US-EST time.&#x20;

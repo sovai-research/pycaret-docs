@@ -21,7 +21,7 @@
 * [📰 News Sentiment](equity-datasets/news.md)
 * [🏁 Wikipedia Views](equity-datasets/wiki.md)
 * [🏗️ Government Contracts](equity-datasets/spending.md)
-* [🏗️ Employee Visa](equity-datasets/spending-1.md)
+* [🇱🇻 Employee Visa](equity-datasets/spending-1.md)
 * [🚦 Factor Signals](equity-datasets/news-1.md)
 
 ## Economic Datasets
@@ -32,8 +32,10 @@
 
 ## Sectorial Datasets
 
-* [🏰 Box Office Statistics](sectorial-datasets/institutional.md)
-* [🏰 Airbnb](sectorial-datasets/institutional-1.md)
+* [🎦 Box Office Stats](sectorial-datasets/institutional.md)
+* [🏠 Airbnb Data](sectorial-datasets/institutional-1.md)
+* [🧏 CFPB Complaints](sectorial-datasets/cfpb-complaints.md)
+* [💶 Request Datasets](sectorial-datasets/request-datasets.md)
 
 ## Core Software
 
