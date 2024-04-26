@@ -8,7 +8,7 @@ description: How to request the development of new datasets for the SovAI SDK.
 
 * The development of a new dataset is a flat fee of $2,500 (compared to typical costs of $15k-$50k).
 * Annual subscribers can request the development of new datasets once per year.
-* All users with access to this platform will have access to the newly developed dataset in the following form `data = sov.data("new_dataset")`
+* All users will have access to the datasets uwith`data = sov.data("new_dataset")`
 
 
 
@@ -28,7 +28,7 @@ The samples include **Amazon**, **Wallmart**, **Earnings Transcripts**, **Websit
 
 {% file src="../.gitbook/assets/top_products_wallmart.csv" %}
 
-### Earnings Conference Call - Text + Audio
+### Earnings Call - Text + Audio
 
 {% file src="../.gitbook/assets/BrinksCompany(The)8-3-2022.txt" %}
 
