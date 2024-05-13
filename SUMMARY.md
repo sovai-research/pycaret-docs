@@ -4,9 +4,9 @@
 
 ## GET STARTED
 
-* [💻 Installation](get-started/installation.md)
 * [🚀 Quickstart](get-started/quickstart.md)
 * [⭐ Tutorials](get-started/tutorials.md)
+* [💻 Installation](get-started/installation.md)
 * [⚒️ Release Notes](get-started/release-notes.md)
 
 ## Equity Datasets

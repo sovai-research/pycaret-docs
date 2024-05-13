@@ -4,6 +4,12 @@ description: Quick start guide to Sovai
 
 # 🚀 Quickstart
 
+{% code fullWidth="false" %}
+```bash
+pip install sovai
+```
+{% endcode %}
+
 ## Introduction
 
 * [Download Datasets](quickstart.md#download-datasets)
@@ -11,6 +17,12 @@ description: Quick start guide to Sovai
 * [Running Reports](quickstart.md#running-reports)
 * [Running Calculations](quickstart.md#running-calculations)
 * [Performing Studies](quickstart.md#performing-studies)
+
+### Tutorials&#x20;
+
+{% hint style="info" %}
+**The best way to familiarize yourself with this powerful library is to head straight to the**[ **tutorial section.**](quickstart.md#tutorials)&#x20;
+{% endhint %}
 
 ### Commands
 
@@ -23,7 +35,7 @@ Utilize various commands to interact with datasets:, [`data`](quickstart.md#down
 
 ## Download Datasets
 
-You will be unable to access **Sovai Datasets** without authenticating your requests. There are three ways to authenticate your requests.
+You will be unable to access **Sovai Datasets** without authenticating your requests. There are two ways to authenticate your requests. Get your token [here](https://sov.ai/home).&#x20;
 
 ```python
 import sovai as sov

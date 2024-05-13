@@ -19,13 +19,13 @@ Sovai is tested and supported on the following 64-bit systems:
 
 Install Sovai with Python's pip package manager.
 
-```
+```bash
 pip install sovai
 ```
 
 To install the full version (see dependencies below):
 
-```
+```bash
 pip install sovai[full]
 ```
 
@@ -33,7 +33,7 @@ pip install sovai[full]
 
 In order to avoid potential conflicts with other packages, it is strongly recommended to use a virtual environment, e.g. python3 virtualenv (see [python3 virtualenv documentation](https://docs.python.org/3/tutorial/venv.html)).
 
-```
+```bash
 # create a virtual environment
 python -m venv yourenvname
 
@@ -184,7 +184,7 @@ codecov
 
 To install the package directly from GitHub (latest source), use the following command:
 
-```
+```bash
 pip install git+https://github.com/sovai/sovai.git#egg=pycaret
 ```
 
@@ -194,7 +194,7 @@ Don't forget to include the `#egg=sovai` part to explicitly name the project, th
 
 To launch the test suite, run the following command from outside the source directory:
 
-```
+```bash
 pytest sovai
 ```
 
@@ -202,13 +202,13 @@ pytest sovai
 
 Docker uses containers to create virtual environments that isolate a Sovai installation from the rest of the system. Sovai docker comes pre-installed with a Notebook environment. that can share resources with its host machine (access directories, use the GPU, connect to the Internet, etc.). The Sovai Docker images are tested for each release.
 
-```
+```bash
 docker run -p 8888:8888 sovai/slim
 ```
 
 For docker image with full version:
 
-```
+```bash
 docker run -p 8888:8888 sovai/full
 ```
 

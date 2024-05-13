@@ -23,11 +23,9 @@ layout:
 
 # Python for Asset Management
 
-{% hint style="info" %}
-**Sovai 1.0 is now available**. `pip install sovai` to try it. Check out this example [Notebook](https://colab.research.google.com/drive/1\_H0sHYhzKGZDmgzrQLosuZAR3nOaL6CN?usp=sharing).
+{% hint style="success" %}
+**The best way to familiarize yourself with this powerful library is to head straight to the**[ **tutorial section.**](./#tutorials)&#x20;
 {% endhint %}
-
-The most user-friendly **machine learning** and **data library** for investment managers.
 
 ## About
 
@@ -92,4 +90,6 @@ If you want to contribute to the project please reach out
 #### :star:Star **Sovai** on GitHub <a href="#star-fastapi-in-github" id="star-fastapi-in-github"></a>
 
 For future use, star our [GitHub repository](https://sov.ai/#pricing) (click the star button on the top right corner)
+
+### “<mark style="background-color:yellow;">The most user-friendly</mark> <mark style="background-color:yellow;"></mark><mark style="background-color:yellow;">**machine learning**</mark> <mark style="background-color:yellow;"></mark><mark style="background-color:yellow;">and</mark> <mark style="background-color:yellow;"></mark><mark style="background-color:yellow;">**data library**</mark> <mark style="background-color:yellow;"></mark><mark style="background-color:yellow;">for investment managers.</mark>”
 
