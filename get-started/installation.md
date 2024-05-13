@@ -31,14 +31,15 @@ pip install sovai[full]
 
 ## Environment
 
-In order to avoid potential conflicts with other packages, it is strongly recommended to use a virtual environment, e.g. python3 virtualenv (see [python3 virtualenv documentation](https://docs.python.org/3/tutorial/venv.html)) or [conda environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html). Using an isolated environment makes it possible to install a specific version of Sovai and its dependencies independently of any previously installed Python packages.
+In order to avoid potential conflicts with other packages, it is strongly recommended to use a virtual environment, e.g. python3 virtualenv (see [python3 virtualenv documentation](https://docs.python.org/3/tutorial/venv.html)).
 
 ```
-# create a conda environment
-conda create --name yourenvname python=3.8
+# create a virtual environment
+python -m venv yourenvname
 
-# activate conda environment
-conda activate yourenvname
+# activate the virtual environment
+source yourenvname/bin/activate  # For Unix/Linux
+yourenvname\Scripts\activate  # For Windows
 
 # install sovai
 pip install sovai

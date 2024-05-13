@@ -28,19 +28,13 @@ You will be unable to access **Sovai Datasets** without authenticating your requ
 ```python
 import sovai as sov
 
-# There are three ways how to login to the API
+# There are two ways how to login to the API
 
 # 1. Configuration API connection
-sov.ApiConfig.token = "super_secret_token"
-sv.ApiConfig.base_url = "https://google.com"
+sov.token_auth(token="add_your_token_here")
 
-# 2. Read token from .env file e.g API_TOKEN=super_secret_token
+# 2. Or read token from .env file e.g API_TOKEN=super_secret_token
 sov.read_key('.env')
-
-# 3. The Basic authentication method
-sov.basic_auth("test@test.com", "super_strong_password")
-
-# And then continue working with get some data from API and manipulating them
 ```
 
 Once this is done, downloading datasets becomes as easy as using the following commands.
