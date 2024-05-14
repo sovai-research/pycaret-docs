@@ -19,7 +19,7 @@ Sovai is tested and supported on the following 64-bit systems:
 
 Install Sovai with Python's pip package manager.
 
-```bash
+```shell
 pip install sovai
 ```
 
@@ -33,7 +33,7 @@ pip install sovai[full]
 
 In order to avoid potential conflicts with other packages, it is strongly recommended to use a virtual environment, e.g. python3 virtualenv (see [python3 virtualenv documentation](https://docs.python.org/3/tutorial/venv.html)).
 
-```bash
+```sh
 # create a virtual environment
 python -m venv yourenvname
 

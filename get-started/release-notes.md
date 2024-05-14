@@ -2,11 +2,11 @@
 description: This page shows release notes >= 0.0
 ---
 
-# ⚒ Release Notes
+# ⚒️ Release Notes
 
 ### **Sovai 0.0.1**
 
-**Release Date: April 10, 2022 (BUG FIXES, NEW FUNCTIONALITY)**
+**Release Date: April 10, 2024 (BUG FIXES, NEW FUNCTIONALITY)**
 
-* Fixed `predict_model` throwing an exception with loaded pipelines ([#2349](https://github.com/pycaret/pycaret/pull/2349))
-* Fixed potential parameter leaking for `ParallelBackend` - thanks to [@goodwanghan](https://github.com/goodwanghan) ([#2339](https://github.com/pycaret/pycaret/pull/2339))
+* Updated `README.dev.md` with fixes for the auto release action and enhancements to the documentation to improve developer onboarding and usage clarity.
+* **License and Setup**: Updated `LICENSE`, `Makefile`, and `requirements.txt` as part of a global refactor, transitioning dependency management to Poetry and reinforcing the testing framework.
