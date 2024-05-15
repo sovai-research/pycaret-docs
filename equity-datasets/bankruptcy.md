@@ -29,6 +29,8 @@ import sovai as sov
 df_bankrupt = sov.data('bankruptcy', tickers=["MSFT","TSLA","META"])
 ```
 
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+
 **Specific Dates**
 
 ```python
@@ -42,8 +44,6 @@ df_bankrupt = sov.data('bankruptcy', start_date="2017-01-03", tickers=["MSFT"])
 import sovai as sov
 df_bankrupt = sov.data('bankruptcy')
 ```
-
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Daily Probabilities
 
@@ -63,7 +63,7 @@ df_importance = sov.data('bankruptcy/shapleys', tickers=["MSFT","TSLA","META"])
 
 Feature Importance (Shapley Values) calculates the contribution of each input variable (features) such as Debt,  Assets, and Revenue to predict bankruptcy risk.
 
-
+<figure><img src="../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
 
 ## Data Dictionary
 
@@ -105,9 +105,9 @@ import sovai as sov
 sov.plot('bankruptcy', chart_type='compare')
 ```
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Compare bankruptcy probabilities across different tickers.</p></figcaption></figure>
 
-Compare bankruptcy probabilities across different tickers.
+
 
 ### Timed Feature Importance
 
@@ -116,7 +116,7 @@ import sovai as sov
 df = sov.plot("bankruptcy", chart_type="shapley", tickers=["TSLA"])
 ```
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Examine how feature importance values evolve over time.</p></figcaption></figure>
 
 ### Total Feature Importance
 
@@ -134,7 +134,7 @@ import sovai as sov
 df= sov.plot("bankruptcy", chart_type="line", tickers=["DDD"])
 ```
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p>Analyze the relationship between bankruptcy probabilities and stock prices.</p></figcaption></figure>
 
 ### **PCA Statistical Similarity**
 
@@ -143,7 +143,7 @@ import sovai as sov
 df= sov.plot("bankruptcy", chart_type="line", tickers=["DDD"])
 ```
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p>Explore the principal component analysis to identify similar tickers.</p></figcaption></figure>
 
 ### Correlation Similarity
 
@@ -152,7 +152,7 @@ import sovai as sov
 sov.plot("bankruptcy", chart_type="similar", tickers=["DDD"])
 ```
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>Discover correlated stocks based on bankruptcy risk profiles.</p></figcaption></figure>
 
 ### Trend Similarity
 
@@ -201,68 +201,7 @@ sov.plot("bankruptcy", chart_type="time_global")
 
 <figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
-###
-
-### Reports
-
-Generate insightful summary reports to understand bankruptcy trends:
-
-*   **Top Sector Predictions:**
-
-    ```python
-    sov.report("bankruptcy", report_type="sector-top")
-    ```
-
-    This report filters sectors with the highest bankruptcy prediction scores.
-*   **Monthly Sector Change Summary:**
-
-    ```python
-    sov.report("bankruptcy", report_type="sector-change")
-    ```
-
-    Track monthly prediction changes across different sectors.
-
-### Plots
-
-Visualize the data with a variety of chart types to enhance understanding:
-
-*   **Bankruptcy Comparison Chart:**
-
-    ```python
-    sov.plot('bankruptcy', chart_type='compare')
-    ```
-
-    Compare bankruptcy probabilities across different tickers.
-*   **Feature Importance Over Time:**
-
-    ```python
-    sov.plot("bankruptcy", chart_type="shapley", tickers=["Ticker"])
-    ```
-
-    Examine how feature importance values evolve over time.
-*   **Bankruptcy vs. Security Price Chart:**
-
-    ```python
-    sov.plot("bankruptcy", chart_type="line", tickers=["Ticker"])
-    ```
-
-    Analyze the relationship between bankruptcy probabilities and stock prices.
-*   **PCA Similarity Plot:**
-
-    ```python
-    sov.plot("bankruptcy", chart_type="pca", tickers=["Ticker"])
-    ```
-
-    Explore the principal component analysis to identify similar tickers.
-*   **Correlation Plot:**
-
-    ```python
-    sov.plot("bankruptcy", chart_type="similar", tickers=["Ticker"])
-    ```
-
-    Discover correlated stocks based on bankruptcy risk profiles.
-
-### Computations
+## Computations
 
 Leverage advanced computational tools for deeper analysis:
 
@@ -294,6 +233,10 @@ Leverage advanced computational tools for deeper analysis:
     ```
 
     Perform principal component analysis for dimensionality reduction.
+
+
+
+**For more advanced applications, see the tutotrial.**&#x20;
 
 ***
 
