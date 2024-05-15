@@ -27,7 +27,7 @@ from sovai import sov
 df_actg_risk = sov.data("corprisk/accounting")
 ```
 
-<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Financial Event Risk
 

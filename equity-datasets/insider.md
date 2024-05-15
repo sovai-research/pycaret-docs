@@ -4,7 +4,7 @@ description: >-
   equities. More than 100+ institutional trading variables.
 ---
 
-# 🗣 Insider Trading
+# 🗣️ Insider Flow Prediction
 
 {% hint style="info" %}
 Data is updated quarterly as data arrives after market close US-EST time.&#x20;
@@ -27,7 +27,7 @@ from sovai import sov
 df_institute = sov.data("institutional/trading")
 ```
 
-<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Filtered Dataset
 

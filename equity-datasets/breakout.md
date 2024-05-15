@@ -18,9 +18,9 @@ This document provides guidance on utilizing the Breakout Prediction SDK to iden
 
 The accuracy is around 65% and ROC-AUC of 68%, it is one of the strongest price breakout models on the market.&#x20;
 
-### Data Access
+## Data Access
 
-#### Retrieving Data
+### Retrieving Data
 
 Fetch the latest breakout data using the SDK:
 
@@ -29,7 +29,7 @@ from sovai import sov
 df_breakout = sov.data("breakout").set_index("date")
 ```
 
-#### Today's Breakout Prediction
+### Today's Breakout Prediction
 
 Access today's highest breakout stock predictions:
 
@@ -38,7 +38,7 @@ Access today's highest breakout stock predictions:
 df_breakout.get_latest()
 ```
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Retrieve Specific Ticker Data
 
@@ -48,9 +48,17 @@ Get breakout data for a specific ticker such as Microsoft (MSFT):
 df_msft = sov.data("breakout", tickers=["MSFT"])
 ```
 
-### Visualization
+## Plots
 
-#### Breakout Predictions
+### **Line Predictions**
+
+```python
+df_breakout.plot_line(tickers=["TSLA", "META", "NFLX"])
+```
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+### Breakout Predictions
 
 Visualize breakout predictions using the SDK's plotting capabilities:
 
@@ -58,13 +66,17 @@ Visualize breakout predictions using the SDK's plotting capabilities:
 sov.plot("breakout", chart_type="predictions", df=df_msft)
 ```
 
-#### Prediction Accuracy
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+
+### Prediction Accuracy
 
 Assess the accuracy of breakout predictions:
 
 ```python
 sov.plot("breakout", chart_type="accuracy", df=df_msft)
 ```
+
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 ## Data Dictionary
 

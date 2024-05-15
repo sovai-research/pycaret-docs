@@ -43,7 +43,7 @@ import sovai as sov
 df_bankrupt = sov.data('bankruptcy')
 ```
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Daily Probabilities
 
@@ -65,9 +65,131 @@ Feature Importance (Shapley Values) calculates the contribution of each input va
 
 
 
+## Reports
+
+### Sorting and Filtering
+
+```python
+import sovai as sov
+sov.report("bankruptcy", report_type="ranking")
+```
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+Filter the outputs based on the top by **Sector**, **Marketcap**, and **Revenue**. You can also change <mark style="color:blue;">`ranking`</mark> to <mark style="color:blue;">`change`</mark> to investigate the month on month change.&#x20;
+
+```python
+sov.report("bankruptcy", report_type="sector-change")
+```
+
+
+
+## Plots
+
+### Bankruptcy Comparison
+
+```python
+import sovai as sov
+sov.plot('bankruptcy', chart_type='compare')
+```
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+### Timed Feature Importance
+
+```python
+import sovai as sov
+df = sov.plot("bankruptcy", chart_type="shapley", tickers=["TSLA"])
+```
+
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+### Total Feature Importance
+
+```python
+import sovai as sov
+sov.plot("bankruptcy", chart_type="stack", tickers=["DDD"])
+```
+
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+### Bankruptcy and Returns
+
+```python
+import sovai as sov
+df= sov.plot("bankruptcy", chart_type="line", tickers=["DDD"])
+```
+
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+### **PCA Statistical Similarity**
+
+```python
+import sovai as sov
+df= sov.plot("bankruptcy", chart_type="line", tickers=["DDD"])
+```
+
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+### Correlation Similarity
+
+```python
+import sovai as sov
+sov.plot("bankruptcy", chart_type="similar", tickers=["DDD"])
+```
+
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+### Trend Similarity
+
+```python
+import sovai as sov
+sov.plot("bankruptcy", chart_type="facet", tickers=["DDD"])
+```
+
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+
+## Global  Plots
+
+### **Confusion Matrix (Performance)**
+
+```python
+import sovai as sov
+sov.plot("bankruptcy", chart_type="confusion_global")
+```
+
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+### **Threshold Plots (Performance)**
+
+```python
+import sovai as sov
+sov.plot("bankruptcy", chart_type="classification_global")
+```
+
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+
+### **Lift Curve (Performance)**
+
+```python
+import sovai as sov
+sov.plot("bankruptcy", chart_type="lift_global")
+```
+
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+
+### Bankruptcy Explanations
+
+```python
+import sovai as sov
+sov.plot("bankruptcy", chart_type="time_global")
+```
+
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+
 ## Data Dictionary
 
-<table><thead><tr><th width="295">Name</th><th width="246">Description</th><th width="89">Type</th><th>Example</th></tr></thead><tbody><tr><td><code>ticker</code></td><td>Stock ticker symbol.</td><td>TEXT</td><td>"TSLA"</td></tr><tr><td><code>date</code></td><td>Record date.</td><td>DATE</td><td>2023-09-30</td></tr><tr><td><code>probability_light</code></td><td>LightGBM Boosting Model prediction.</td><td>FLOAT</td><td>1.46636</td></tr><tr><td><code>probability_convolution</code></td><td>CNN Model prediction for bankruptcies</td><td>FLOAT</td><td>0.135975</td></tr><tr><td><code>probability_rocket</code></td><td>Rocket Model prediction for time series classification</td><td>FLOAT</td><td>0.02514</td></tr><tr><td><code>probability_encoder</code></td><td>LightGBM and CNN autoencoders Model prediction.</td><td>FLOAT</td><td>0.587817</td></tr><tr><td><code>probability_fundamental</code></td><td>Prediction using accounting data only.</td><td>FLOAT</td><td>1.26148</td></tr><tr><td><code>probability</code></td><td>Average probability across models.</td><td>FLOAT</td><td>0.553823</td></tr><tr><td><code>sans_market</code></td><td>Fundamental prediction adjusted for market predictions.</td><td>FLOAT</td><td>-0.20488</td></tr><tr><td><code>volatility</code></td><td>Variability of model predictions.</td><td>FLOAT</td><td>0.62934</td></tr><tr><td><code>multiplier</code></td><td>Coefficient for model prediction calibration.</td><td>FLOAT</td><td>1.951868</td></tr><tr><td><code>version</code></td><td>Model/data record version.</td><td>INT</td><td>20240201</td></tr></tbody></table>
+<table><thead><tr><th width="293">Name</th><th width="246">Description</th><th width="89">Type</th><th>Example</th></tr></thead><tbody><tr><td><code>ticker</code></td><td>Stock ticker symbol.</td><td>TEXT</td><td>"TSLA"</td></tr><tr><td><code>date</code></td><td>Record date.</td><td>DATE</td><td>2023-09-30</td></tr><tr><td><code>probability_light</code></td><td>LightGBM Boosting Model prediction.</td><td>FLOAT</td><td>1.46636</td></tr><tr><td><code>probability_convolution</code></td><td>CNN Model prediction for bankruptcies</td><td>FLOAT</td><td>0.135975</td></tr><tr><td><code>probability_rocket</code></td><td>Rocket Model prediction for time series classification</td><td>FLOAT</td><td>0.02514</td></tr><tr><td><code>probability_encoder</code></td><td>LightGBM and CNN autoencoders Model prediction.</td><td>FLOAT</td><td>0.587817</td></tr><tr><td><code>probability_fundamental</code></td><td>Prediction using accounting data only.</td><td>FLOAT</td><td>1.26148</td></tr><tr><td><code>probability</code></td><td>Average probability across models.</td><td>FLOAT</td><td>0.553823</td></tr><tr><td><code>sans_market</code></td><td>Fundamental prediction adjusted for market predictions.</td><td>FLOAT</td><td>-0.20488</td></tr><tr><td><code>volatility</code></td><td>Variability of model predictions.</td><td>FLOAT</td><td>0.62934</td></tr><tr><td><code>multiplier</code></td><td>Coefficient for model prediction calibration.</td><td>FLOAT</td><td>1.951868</td></tr><tr><td><code>version</code></td><td>Model/data record version.</td><td>INT</td><td>20240201</td></tr></tbody></table>
 
 {% hint style="info" %}
 When `sans_market` is <mark style="color:green;">positive</mark>, it means that the fundamentals show a larger predicted bankruptcy than what the market predicts **(stock might go down in medium term)** , when `sans_market` is <mark style="color:red;">negative</mark>, the market might have overreacted, and predict a larger probability of bankruptcy than what the fundamentals suggest **(stock might go up in medium term)**.

@@ -27,7 +27,7 @@ from sovai import sov
 df_ratios = sov.data("ratios/weekly")
 ```
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Retrieve a Subsection
 

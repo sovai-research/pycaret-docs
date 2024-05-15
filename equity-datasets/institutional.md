@@ -27,7 +27,7 @@ from sovai import sov
 df_institute = sov.data("institutional/trading")
 ```
 
-<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Filtered Dataset
 
