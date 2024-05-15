@@ -1,7 +1,7 @@
 ---
 description: >-
   Here we develop three tables to develop a final score of corporate risk to US
-  equities. More than 100+ institutional trading variables.
+  equities. More than 60+ insider trading variables.
 ---
 
 # 🗣️ Insider Flow Prediction
@@ -12,31 +12,66 @@ Data is updated quarterly as data arrives after market close US-EST time.&#x20;
 
 `Tutorials` are the best documentation — <mark style="color:blue;">`Financial Ratio Analysis`</mark>
 
-<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>13F Filings, Market Data</td></tr><tr><td><strong>Models Used</strong></td><td>Simple Calculations, Aggregations</td></tr><tr><td><strong>Model Outputs</strong></td><td>Standardized Ratios</td></tr></tbody></table>
+<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Form 3, 4, 5, Schedule 13D and Schedule 13G, Form 144, Market Data</td></tr><tr><td><strong>Models Used</strong></td><td>Machine Learning (Gradient Boost)</td></tr><tr><td><strong>Model Outputs</strong></td><td>Percentile Outputs (Relative)</td></tr></tbody></table>
 
-Diversified selection of ratios for factor development or bottum-up equity selection strategies.&#x20;
+Diversified selection of features for factor development or bottum-up equity selection strategies.&#x20;
 
 ## Data Access
 
-#### Institutional Trading Data
+#### Insider Trading Data
 
 This data is around 1GB if you download the entire dataset.
 
 ```python
 from sovai import sov
-df_institute = sov.data("institutional/trading")
+df_insider = sov.data("insider/trading")
 ```
 
-<figure><img src="../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+{% code title="Grab latest forecasts" %}
+```python
+df_insider.get_latest("flow_prediction")
+```
+{% endcode %}
 
 #### Filtered Dataset
 
 ```python
 from sovai import sov
-df_institute = sov.data("institutional/trading", start_date="2004-04-30", tickers=["MSFT"])
+df_insider = sov.data("insider/trading", start_date="2004-04-30", tickers=["MSFT"])
 ```
 
+## Plots
 
+### Percentile Progression
+
+```python
+import sovai as sov
+sov.plot("insider", chart_type="percentile", ticker="AAPL")
+```
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+### Insider Flow Prediction
+
+```python
+import sovai as sov
+sov.plot("insider", chart_type="prediction")
+```
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+### Grouped Plot
+
+```python
+import sovai as sov
+sov.plot("insider", chart_type="flows")
+```
+
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Drag on the plot to select shorter periods</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>Double click a single item for a line plot of the flow prediction over time</p></figcaption></figure>
 
 ## Data Dictionary
 
@@ -114,44 +149,50 @@ df_institute = sov.data("institutional/trading", start_date="2004-04-30", ticker
 | `sale_press_occurrences_direct_to_indirect_abs_ratio_pert`   | Variability in absolute ratio of occurrences under direct versus indirect sales pressure.                           |
 | `flow_prediction`                                            | Predicted transaction flow based on analysis (not directly computed in the provided code but implied).              |
 
-## Institutional Investment  Analysis
+## Insider Trading Analysis Data Dictionary
 
-This dataset provides a comprehensive analysis of institutional investment behaviors, strategies, and portfolio dynamics. It covers various aspects like fund ratios, growth metrics, derivative concentrations, shareholder dynamics, and more. The data is designed to assist professional investors in understanding market trends, evaluating investment strategies, and making informed decisions.
-
-
+This dataset provides a comprehensive analysis of insider trading behaviors, strategies, and portfolio dynamics. It covers various aspects like transaction ratios, market impact metrics, ownership dynamics, and more. The data is designed to assist investors and regulators in understanding insider trading patterns, evaluating the impact of insider transactions, and making informed decisions.
 
 ### Data Applications
 
-* **Market Trend Analysis:** Understand broad market trends by analyzing growth metrics and standard deviations.
-* **Risk Assessment:** Evaluate the risk profiles of different funds and strategies using volatility and diversification metrics.
-* **Strategy Evaluation:** Assess and compare the effectiveness of different investment strategies.
-* **Investment Decision Making:** Utilize historical data and flow metrics to make informed investment decisions.
+* Market Impact Analysis: Understand the impact of insider transactions on market prices and liquidity.
+* Risk Assessment: Evaluate the risk profiles of different insider trading strategies and behaviors.
+* Investment Decision Making: Utilize insider trading data to make informed investment decisions.
 
 ### Feature Descriptions
 
-1. **Standard Deviation Metrics (Columns 0-38)**
-   * **Purpose:** These metrics provide insights into the volatility and risk associated with various investment strategies and portfolio compositions.
-   * **Usage:** Investors can use these metrics to assess the risk profile of different funds and compare the stability of their investment strategies.
-2. **Growth Metrics (Columns 75-79)**
-   * **Purpose:** These metrics track the growth or decline in the value of investments, the number of shareholders, and their share value over time.
-   * **Usage:** Useful for identifying trends in investment preferences and shareholder behaviors.
-3. **Diversification Score (Column 80)**
-   * **Purpose:** Indicates the level of diversification in a portfolio based on different types of investments.
-   * **Usage:** Investors can evaluate the risk mitigation strategies of different funds based on their diversification scores.
-4. **Derivative and Put-Call Metrics (Columns 81-88)**
-   * **Purpose:** Provide insights into the use of derivatives and options in investment strategies.
-   * **Usage:** These metrics help in understanding the risk appetite and hedging strategies of investors.
-5. **Historical Highs and Debt-Equity Ratio (Columns 90-94)**
-   * **Purpose:** Offers a historical perspective on share values and assesses the leverage used by funds.
-   * **Usage:** Useful for long-term investment analysis and understanding the use of debt in investment strategies.
-6. **Allocation Pressure and Flow Metrics (Columns 96-107)**
-   * **Purpose:** These metrics assess the inflows and outflows from funds, alongside the allocation pressure on investments.
-   * **Usage:** Essential for understanding market liquidity, investor sentiment, and pressure on asset allocation.
-7. **Overloaded Indicators (Columns 108-109)**
-   * **Purpose:** Indicate high concentrations in derivatives and puts.
-   * **Usage:** Investors can gauge the level of speculation and potential overexposure to certain investment instruments.
-
-###
+1. Derivative and Non-Derivative Transaction Metrics (Columns 1-4)
+   * Purpose: These metrics provide insights into the use of derivative and non-derivative instruments in insider transactions.
+   * Usage: Investors can assess the complexity and risk associated with insider trading strategies.
+2. Ownership Dynamics Metrics (Columns 5-12)
+   * Purpose: These metrics track the ownership patterns and concentrations among insiders, such as directors, officers, and 10% owners.
+   * Usage: Useful for identifying potential conflicts of interest and assessing the alignment of insider interests with the company.
+3. Transaction Type Metrics (Columns 13-18)
+   * Purpose: These metrics analyze the types of transactions, such as purchases, sales, and acquisitions, and their impact on the market.
+   * Usage: Investors can evaluate the motivations behind insider transactions and their potential signaling effect.
+4. Sale Pressure Metrics (Columns 19-30)
+   * Purpose: These metrics focus on the impact of insider sales and the pressure they exert on the market.
+   * Usage: Essential for understanding the liquidity and price dynamics surrounding insider sales.
+5. Variability and Perturbation Metrics (Columns 31-50)
+   * Purpose: These metrics measure the variability and percentage changes in various aspects of insider transactions.
+   * Usage: Useful for assessing the stability and predictability of insider trading patterns.
+6. Key Transaction Details
+   * `ticker`: Stock ticker symbol associated with the insider transaction.
+   * `date`: Date when the insider transaction was reported.
+   * `market_impact`: Sum of the effect of all insider transactions on the market value.
+   * `market_impact_percentage`: Mean impact of insider transactions as a percentage of the transaction value.
+   * `percentage_shares`: Average portion of shares transacted by insiders relative to total shares outstanding.
+   * `transaction_value`: Total value of the insider transactions.
+   * `transaction_shares`: Total number of shares involved in the insider transactions.
+   * `days_to_file`: Average number of days between the insider transaction and filing dates.
+   * `row_number`: Count of insider transactions within the dataset.
+   * `cumulative_market_impact`: Aggregate impact of insider transactions over time.
+   * `relative_transaction_size`: Size of an insider transaction relative to other transactions, combining absolute ratios of shares and values.
+   * `holding_period`: Average time between the acquisition and sale of stock by insiders.
+   * `sale_to_purchase_ratio`: Ratio of the sum of insider sales to purchases by absolute value.
+   * `holding_period_pert`: Perturbation or change in the holding period of insiders.
+   * `sale_to_purchase_ratio_pert`: Variability or percentage change in the sale-to-purchase ratio of insiders.
+   * `flow_prediction`: Predicted transaction flow based on the analysis of insider trading patterns.
 
 
 
