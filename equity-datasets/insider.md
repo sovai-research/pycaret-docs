@@ -7,7 +7,7 @@ description: >-
 # 🗣️ Insider Flow Prediction
 
 {% hint style="info" %}
-Data is updated quarterly as data arrives after market close US-EST time.&#x20;
+Data is updated weekly as data arrives after market close US-EST time.&#x20;
 {% endhint %}
 
 `Tutorials` are the best documentation — <mark style="color:blue;">`Financial Ratio Analysis`</mark>
@@ -27,7 +27,7 @@ from sovai import sov
 df_insider = sov.data("insider/trading")
 ```
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 {% code title="Grab latest forecasts" %}
 ```python
@@ -51,7 +51,7 @@ import sovai as sov
 sov.plot("insider", chart_type="percentile", ticker="AAPL")
 ```
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Insider Flow Prediction
 
@@ -60,7 +60,7 @@ import sovai as sov
 sov.plot("insider", chart_type="prediction")
 ```
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Grouped Plot
 
@@ -69,9 +69,9 @@ import sovai as sov
 sov.plot("insider", chart_type="flows")
 ```
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Drag on the plot to select shorter periods</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Drag on the plot to select shorter periods</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>Double click a single item for a line plot of the flow prediction over time</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Double click a single item for a line plot of the flow prediction over time</p></figcaption></figure>
 
 ## Data Dictionary
 
@@ -180,19 +180,18 @@ This dataset provides a comprehensive analysis of insider trading behaviors, str
    * `ticker`: Stock ticker symbol associated with the insider transaction.
    * `date`: Date when the insider transaction was reported.
    * `market_impact`: Sum of the effect of all insider transactions on the market value.
-   * `market_impact_percentage`: Mean impact of insider transactions as a percentage of the transaction value.
-   * `percentage_shares`: Average portion of shares transacted by insiders relative to total shares outstanding.
+   * `market_impact_percentage`: Mean impact as a percentage of the transaction value.
+   * `percentage_shares`: APortio transacted by insiders relative to total shares outstanding.
    * `transaction_value`: Total value of the insider transactions.
    * `transaction_shares`: Total number of shares involved in the insider transactions.
    * `days_to_file`: Average number of days between the insider transaction and filing dates.
    * `row_number`: Count of insider transactions within the dataset.
    * `cumulative_market_impact`: Aggregate impact of insider transactions over time.
-   * `relative_transaction_size`: Size of an insider transaction relative to other transactions, combining absolute ratios of shares and values.
    * `holding_period`: Average time between the acquisition and sale of stock by insiders.
-   * `sale_to_purchase_ratio`: Ratio of the sum of insider sales to purchases by absolute value.
+   * `sale_to_purchase_ratio`: Ratio of the sum of insider sales to purchases
    * `holding_period_pert`: Perturbation or change in the holding period of insiders.
-   * `sale_to_purchase_ratio_pert`: Variability or percentage change in the sale-to-purchase ratio of insiders.
-   * `flow_prediction`: Predicted transaction flow based on the analysis of insider trading patterns.
+   * `sale_to_purchase_ratio_pert`: Change in the sale-to-purchase ratio of insiders.
+   * `flow_prediction`: Predicted transaction flow from insider trading patterns.
 
 
 

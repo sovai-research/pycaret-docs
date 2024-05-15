@@ -14,49 +14,48 @@ Daily index arrive between 11 pm - 4 am before market open in the US.
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>SEC Filings, EDGAR API, Raw XBRL. </td></tr><tr><td><strong>Models Used</strong></td><td>Imputation Models, Validation  Against  Commerical Dataset</td></tr><tr><td><strong>Model Outputs</strong></td><td>Monthly Accounting Values</td></tr></tbody></table>
 
-This indicator uses leading as opposed to lagging inputs. The constituents of the indicator has been selected for their recessionary predictive qualities.&#x20;
+The following is an investigation into the accounting patterns of companies as per their filings.
 
-The final Turing Index is a simple average of Market, Business, and Political risk.
+## Data Access
 
-### Data Access
-
-#### Retrieving Data
+### Retrieving Data
 
 Fetch the latest index data using the SDK:
 
 ```python
 from sovai import sov
-df_risks = sov.data("risks")
+df_accounting = sov.data("accounting/weekly", tickers=["MSFT", "TSLA", "META"])
 ```
 
-<figure><img src="../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-#### Market Risks
+## Reports
 
-Isolating market risk indicators
+### Balance Sheet Report
 
 ```python
-from sovai import sov
-df_market = sov.data("risks/market")
+import sovai as sov
+sov.report("accounting", report_type="balance_sheet", ticker="MSFT")
 ```
 
-#### Business Risks
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
-Isolating business risk indicators
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+
+## Plots
+
+### Tree Plot
 
 ```python
-from sovai import sov
-df_business = sov.data("risks/business")
+import sovai as sov
+sov.plot("accounting", chart_type="balance", ticker="MSFT")
 ```
 
-#### Business Risks
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-Isolating business risk indicators
-
-```python
-from sovai import sov
-df_political = sov.data("risks/political")
-```
+### Grouped Plot
 
 ### Data Dictionary
 
