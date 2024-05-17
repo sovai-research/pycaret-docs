@@ -47,7 +47,7 @@ import sovai as sov
 sov.report("institutional/flow_prediction", report_type="ranking")
 ```
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Plots
 
@@ -58,7 +58,7 @@ import sovai as sov
 sov.plot("institutional", chart_type="prediction")
 ```
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Grouped Plot
 
@@ -67,7 +67,7 @@ import sovai as sov
 sov.plot("institutional", chart_type="flows")
 ```
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>Highlighting certain sectors</p></figcaption></figure>
 

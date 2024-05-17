@@ -55,7 +55,7 @@ sov.plot("accounting", chart_type="balance", ticker="MSFT")
 
 <figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-### Grouped Plot
+
 
 ### Data Dictionary
 

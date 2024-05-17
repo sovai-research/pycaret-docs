@@ -24,7 +24,7 @@ Fetch the latest index data using the SDK:
 
 ```python
 from sovai import sov
-df_ratios = sov.data("ratios/weekly")
+df_ratios = sov.data("ratios/normal")
 ```
 
 <figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
@@ -35,8 +35,47 @@ Filter by `ticker` or `date` to select ratios:
 
 ```python
 from sovai import sov
-df_ratios = sov.data("ratios/weekly", start_date="2008-03-30", tickers=["AMZN","MMM"])
+df_ratios = sov.data("ratios/normal", start_date="2008-03-30", tickers=["AMZN","MMM"])
 ```
+
+
+
+#### Relative data
+
+You can also obtain data in percentiles across time with `ratios/relative`.&#x20;
+
+```python
+from sovai import sov
+df_percentile = sov.data("ratios/relative", start_date="2018-01-01", tickers=["TSLA", "META"])
+```
+
+
+
+## Plots
+
+### Benchmark Analysis
+
+```python
+import sovai as sov
+sov.plot("ratios", chart_type="benchmark")
+```
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+### Dynamic Ratios
+
+```python
+import sovai as sov
+sov.plot("ratios", chart_type="relative")
+```
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+###
 
 ### Data Dictionary
 
