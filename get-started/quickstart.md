@@ -10,6 +10,8 @@ pip install sovai
 ```
 {% endcode %}
 
+Please note that this only works for [<mark style="color:purple;">`paying subscribers`</mark>](https://sov.ai/home)!&#x20;
+
 ## Introduction
 
 * [Download Datasets](quickstart.md#download-datasets)

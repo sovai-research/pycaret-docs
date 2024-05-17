@@ -8,6 +8,7 @@
 * [⭐ Tutorials](get-started/tutorials.md)
 * [💻 Installation](get-started/installation.md)
 * [⚒️ Release Notes](get-started/release-notes.md)
+* [🔘 About](get-started/readme.md)
 
 ## Equity Datasets
 

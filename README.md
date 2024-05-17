@@ -23,31 +23,19 @@ layout:
 
 # Python for Asset Management
 
+## Installation
+
+To use Sovai's python module you can install `SovAI`.
+
+```
+pip install sovai
+```
+
+Please note that this only works for [<mark style="color:purple;">`paying subscribers`</mark>](https://sov.ai/home)!&#x20;
+
 {% hint style="success" %}
 **The best way to familiarize yourself with this powerful library is to head straight to the**[ **tutorial section.**](./#tutorials)&#x20;
 {% endhint %}
-
-## About
-
-**SovAI was founded in 2021 to bridge the gap between quality research and asset managers.** The company recognized that fundamental investors lack accessible solutions to apply machine learning.
-
-<figure><img src=".gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
-
-The company is **privately funded, ensuring the independence and objectivity of its research outputs.**
-
-<figure><img src=".gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
-
-The software is built by alumni from the **Alan Turing Institute**, the Oxford-Man Institute of Quantitative Finance at **Oxford University**, and financial engineering graduates at **New York University**.
-
-<figure><img src=".gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
-
-SovAI is and will remain the most robust and simultaneously most affordable subscription product on the market. This will be **gauranteed with an anytime refund**.&#x20;
-
-<figure><img src=".gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
-
-Finally we have benefited from the input of the following **four academic advisors** that has been supporting us since the birth of SovAI.
-
-<figure><img src=".gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
 
 ### Forthcoming Datasets
 
@@ -56,12 +44,6 @@ Depending on the feedback we receive from users we can add the following dataset
 <table><thead><tr><th width="183">Prediction Data</th><th width="210">Core Datasets</th><th width="213">Sectorial Data</th><th>Premium Data</th></tr></thead><tbody><tr><td>Earnings Surprise</td><td>Congressional Trading</td><td>Box Office Data</td><td>Shipping Data</td></tr><tr><td>ETF Flows</td><td>Senatorial Trading</td><td>Wallmart Products</td><td>Real Estate</td></tr><tr><td>Undervaluation</td><td>Patent Applications</td><td>Amazon Products</td><td>Entity Data</td></tr></tbody></table>
 
 
-
-To use Sovai's python module you can install `SovAI`.
-
-```
-pip install sovai
-```
 
 ## Admin Lead
 
