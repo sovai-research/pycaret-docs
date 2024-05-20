@@ -6,6 +6,10 @@ description: >-
 
 # 🈁 Accounting Data
 
+{% hint style="warning" %}
+This dataset is replaceable with your preferred standardized dataset, currently it is built from public filings with the values 95% confirmed against five commercial datasets.&#x20;
+{% endhint %}
+
 {% hint style="info" %}
 Daily index arrive between 11 pm - 4 am before market open in the US.
 {% endhint %}
@@ -15,6 +19,8 @@ Daily index arrive between 11 pm - 4 am before market open in the US.
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>SEC Filings, EDGAR API, Raw XBRL. </td></tr><tr><td><strong>Models Used</strong></td><td>Imputation Models, Validation  Against  Commerical Dataset</td></tr><tr><td><strong>Model Outputs</strong></td><td>Monthly Accounting Values</td></tr></tbody></table>
 
 The following is an investigation into the accounting patterns of companies as per their filings.
+
+Daily index arrive between 11 pm - 4 am before market open in the US.
 
 ## Data Access
 

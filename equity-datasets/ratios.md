@@ -6,6 +6,10 @@ description: >-
 
 # 🟩 Financial Ratios
 
+{% hint style="warning" %}
+This dataset is replaceable with your preferred standardized ratio dataset, currently it is built from public filings with the values 95% confirmed against five commercial datasets.&#x20;
+{% endhint %}
+
 {% hint style="info" %}
 Data arrives late Friday night 11 pm - 12 am after market close US-EST time.&#x20;
 {% endhint %}
