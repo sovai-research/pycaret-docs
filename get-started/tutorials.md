@@ -1,5 +1,7 @@
 ---
-description: Official tutorials created by the developers of Sovai.
+description: >-
+  Official tutorials created by the developers of Sovai. Forthcoming, December
+  2024
 ---
 
 # ⭐ Tutorials

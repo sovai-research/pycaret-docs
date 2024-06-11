@@ -1,9 +1,6 @@
 ---
-description: Cheat sheets with summary of all functions and modules
+description: Forthcoming, December 2024
 ---
 
 # 📬 Computations
 
-<figure><img src="../.gitbook/assets/pycaret1.png" alt=""><figcaption></figcaption></figure>
-
-{% file src="../.gitbook/assets/PyCaret 3.0 cheat_sheet.pdf" %}

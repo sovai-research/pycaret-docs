@@ -28,8 +28,9 @@
 ## Economic Datasets
 
 * [🏳️ Turing Risk Index](economic-datasets/breakout.md)
-* [📰 Core Economic Data](economic-datasets/news.md)
-* [📰 ETF Flows](economic-datasets/news-1.md)
+* [🔃 Asset Rotation](economic-datasets/news.md)
+* [📰 Core Economic Data](economic-datasets/news-1.md)
+* [📰 ETF Flows](economic-datasets/news-2.md)
 
 ## Sectorial Datasets
 
@@ -52,7 +53,7 @@
 
 ## IMPORTANT LINKS
 
-* [⚙️ Main Website](https://pycaret.readthedocs.io/en/latest/)
-* [👮 Forum and Issues](https://github.com/pycaret/pycaret/blob/master/LICENSE)
-* [🙋 Web Application](https://github.com/pycaret/pycaret/discussions)
-* [📤 LinkedIn](https://github.com/pycaret/pycaret/issues)
+* [⚙️ Main Website](https://sov.ai)
+* [👮 Forum and Issues](https://forum.ml-quant.com/)
+* [🙋 Web Application](https://sov.ai/app)
+* [📤 LinkedIn](https://www.linkedin.com/company/sovai/)

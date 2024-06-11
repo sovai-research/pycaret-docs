@@ -1,10 +1,10 @@
 ---
 description: >-
   Developed a core economic dataset that explain more than 90% of the
-  variability in most economic outcomes.
+  variability in most economic outcomes. Forthcoming, December 2024
 ---
 
-# 📰 ETF Flows
+# 📰 Core Economic Data
 
 
 
