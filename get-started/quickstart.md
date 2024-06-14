@@ -6,7 +6,7 @@ description: Quick start guide to Sovai
 
 {% code fullWidth="false" %}
 ```bash
-pip install sovai
+!pip install sovai
 ```
 {% endcode %}
 
@@ -35,21 +35,26 @@ Utilize various commands to interact with datasets:, [`data`](quickstart.md#down
 * `sov.reports('query')`: Access reports summarizing predictions.
 * `sov.compute('query')`: Perform computations on the dataset.
 
-## Download Datasets
+## Example
+
+## Authenticate Account:  <mark style="color:blue;">sov.token\_auth()</mark>
 
 You will be unable to access **Sovai Datasets** without authenticating your requests.&#x20;
 
 There are two ways to authenticate your requests. Get your token [here](https://sov.ai/home).&#x20;
 
-```python
-import sovai as sov
+<pre class="language-python"><code class="lang-python">import sovai as sov
 
 # 1. Method 1: Configuration API connection
-sov.token_auth(token="add_your_token_here")
-
+<strong>sov.token_auth(token="add_your_token_here")
+</strong>
 # 2. Method 2: Or read token from .env file e.g API_TOKEN=super_secret_token
 sov.read_key('.env')
-```
+</code></pre>
+
+
+
+## Download Data: :  <mark style="color:blue;">sov.data()</mark>
 
 Once this is done, downloading datasets becomes as easy as using this.
 
@@ -62,9 +67,9 @@ We access  tables "<mark style="color:blue;">corprisk</mark>", "<mark style="col
 
 
 
-## Visualizing Data
+## Visualize Data: <mark style="color:blue;">sov.plot()</mark>
 
-### Unique Plots
+#### Unique Plots
 
 Certain datasets have unique visualization that you access from their respective pages.&#x20;
 
@@ -74,7 +79,7 @@ sov.plot('bankruptcy', chart_type='compare')
 
 In these scenarios, you would directly call up the dataset, in this case **'bankruptcy'** and the associated **chart\_type.**&#x20;
 
-### Universal Plots
+#### Universal Plots
 
 Some visualizations are universally applicable to multiple datasets. We could also rely heavily on the built-in plots in pandas.&#x20;
 
@@ -85,7 +90,7 @@ df_risks[["MARKET_RISK","TURING_RISK"]].tail(15400).plot()
 
 
 
-## Running Reports
+## Running Reports: <mark style="color:blue;">sov.report()</mark>
 
 Another option is for us to run reports on the dataset, which largely allows us to explore the dataset.&#x20;
 
@@ -101,7 +106,7 @@ df_risks.query("ticker == 'CGRNQ'")
 
 
 
-## Running Calculations
+## Running Computation: <mark style="color:blue;">sov.compute()</mark>
 
 Sovai simplifies many calculations that would otherwise take many lines to compute. We also write the code to be as fast as possible .
 
@@ -119,7 +124,9 @@ df_distance = sov.compute('distance-matrix', on="ticker", df=df_risks)
 
 
 
-## Performing Studies
+## Custom Studies: <mark style="color:blue;">sov.custom()</mark>
+
+<mark style="background-color:red;">Still a work in progress.</mark>
 
 Studies include more advanced methods than calculations, and currently include software for portfolio-optimization, and time-series forecasts.&#x20;
 

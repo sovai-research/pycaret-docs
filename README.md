@@ -37,13 +37,17 @@ Please note that this only works for [<mark style="color:purple;">`paying subscr
 **The best way to familiarize yourself with this powerful library is to head straight to the**[ **tutorial section.**](./#tutorials)&#x20;
 {% endhint %}
 
+### Provided Datasets
+
+1. [Equity Datasets](realtime-datasets/equity-datasets/) - Data on publicly traded companies.
+2. [Economic Datasets](realtime-datasets/equity-datasets/) - Data for economic forecasting tasks.
+3. [Sectorial Datasets](realtime-datasets/sectorial-datasets/) - Diverse sectors for predictive analysis.
+
 ### Forthcoming Datasets
 
 Depending on the feedback we receive from users we can add the following datasets.
 
 <table><thead><tr><th width="183">Prediction Data</th><th width="210">Core Datasets</th><th width="213">Sectorial Data</th><th>Premium Data</th></tr></thead><tbody><tr><td>Earnings Surprise</td><td>Congressional Trading</td><td>Box Office Data</td><td>Shipping Data</td></tr><tr><td>ETF Flows</td><td>Senatorial Trading</td><td>Wallmart Products</td><td>Real Estate</td></tr><tr><td>Undervaluation</td><td>Patent Applications</td><td>Amazon Products</td><td>Entity Data</td></tr></tbody></table>
-
-
 
 ## Admin Lead
 
@@ -73,5 +77,5 @@ If you want to contribute to the project please reach out
 
 For future use, star our [GitHub repository](https://sov.ai/#pricing) (click the star button on the top right corner)
 
-### “<mark style="background-color:yellow;">The most user-friendly</mark> <mark style="background-color:yellow;"></mark><mark style="background-color:yellow;">**machine learning**</mark> <mark style="background-color:yellow;"></mark><mark style="background-color:yellow;">and</mark> <mark style="background-color:yellow;"></mark><mark style="background-color:yellow;">**data library**</mark> <mark style="background-color:yellow;"></mark><mark style="background-color:yellow;">for investment managers.</mark>”
+### <mark style="background-color:orange;">“The most user-friendly</mark> <mark style="background-color:orange;"></mark><mark style="background-color:orange;">**machine learning**</mark><mark style="background-color:orange;">** **</mark><mark style="background-color:orange;">**library**</mark> <mark style="background-color:orange;"></mark><mark style="background-color:orange;">for investment managers.”</mark>
 
