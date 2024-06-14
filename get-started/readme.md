@@ -20,7 +20,7 @@ layout:
 
 # 🔘 About
 
-**SovAI was founded in 2021 to bridge the gap between quality research and asset managers.** The company recognized that fundamental investors lack accessible solutions to apply machine learning.
+**SovAI was founded in 2023 to bridge the gap between quality research and asset managers.** The company recognized that fundamental investors lack accessible solutions to apply machine learning.
 
 <figure><img src="../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
 
@@ -28,7 +28,7 @@ The company is **privately funded, ensuring the independence and objectivity of 
 
 <figure><img src="../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
-The software is built by alumni from the **Alan Turing Institute**, the Oxford-Man Institute of Quantitative Finance at **Oxford University**, and financial engineering graduates at **New York University**.
+The software is built by alumni from the **Alan Turing Institute**, the Oxford-Man Institute of Quantitative Finance at **Oxford University**, and financial engineering and computer science graduates at **New York University**.
 
 <figure><img src="../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
