@@ -12,6 +12,12 @@ description: Quick start guide to Sovai
 
 Please note that this only works for [<mark style="color:purple;">`paying subscribers`</mark>](https://sov.ai/home)!&#x20;
 
+### [`Got to Tutorials` ](tutorials.md)
+
+{% hint style="info" %}
+**To familiarize yourself with this powerful library is to head straight to the**[ **tutorial section.**](tutorials.md)&#x20;
+{% endhint %}
+
 ## Introduction
 
 * [Download Datasets](quickstart.md#download-datasets)
@@ -19,12 +25,6 @@ Please note that this only works for [<mark style="color:purple;">`paying subscr
 * [Running Reports](quickstart.md#running-reports)
 * [Running Calculations](quickstart.md#running-calculations)
 * [Performing Studies](quickstart.md#performing-studies)
-
-### Tutorials&#x20;
-
-{% hint style="info" %}
-**The best way to familiarize yourself with this powerful library is to head straight to the**[ **tutorial section.**](tutorials.md)&#x20;
-{% endhint %}
 
 ### Commands
 
