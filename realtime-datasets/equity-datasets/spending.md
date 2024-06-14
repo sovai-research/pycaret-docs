@@ -27,7 +27,7 @@ from sovai import sov
 df_visa = sov.data("visas/h1b")
 ```
 
-<figure><img src="../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Financial Event Risk
 
@@ -38,7 +38,7 @@ from sovai import sov
 df_visa = sov.data("visas/h1b", start_date="2017-03-30", tickers=["MSFT","TSLA", "AAPL","META"])
 ```
 
-<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 ## Data Dictionaries
 

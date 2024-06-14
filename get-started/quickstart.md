@@ -23,7 +23,7 @@ Please note that this only works for [<mark style="color:purple;">`paying subscr
 ### Tutorials&#x20;
 
 {% hint style="info" %}
-**The best way to familiarize yourself with this powerful library is to head straight to the**[ **tutorial section.**](quickstart.md#tutorials)&#x20;
+**The best way to familiarize yourself with this powerful library is to head straight to the**[ **tutorial section.**](tutorials.md)&#x20;
 {% endhint %}
 
 ### Commands
@@ -37,28 +37,28 @@ Utilize various commands to interact with datasets:, [`data`](quickstart.md#down
 
 ## Download Datasets
 
-You will be unable to access **Sovai Datasets** without authenticating your requests. There are two ways to authenticate your requests. Get your token [here](https://sov.ai/home).&#x20;
+You will be unable to access **Sovai Datasets** without authenticating your requests.&#x20;
+
+There are two ways to authenticate your requests. Get your token [here](https://sov.ai/home).&#x20;
 
 ```python
 import sovai as sov
 
-# There are two ways how to login to the API
-
-# 1. Configuration API connection
+# 1. Method 1: Configuration API connection
 sov.token_auth(token="add_your_token_here")
 
-# 2. Or read token from .env file e.g API_TOKEN=super_secret_token
+# 2. Method 2: Or read token from .env file e.g API_TOKEN=super_secret_token
 sov.read_key('.env')
 ```
 
-Once this is done, downloading datasets becomes as easy as using the following commands.
+Once this is done, downloading datasets becomes as easy as using this.
 
 ```python
 # Retrieve data
 gs_df = sov.data("bankruptcy/monthly")
 ```
 
-We access  tables "corprisk", "breakout", "news", "institutional", "insider", "wikipedia", "spending", "market", "accounting", and many more from the **data repository**.&#x20;
+We access  tables "<mark style="color:blue;">corprisk</mark>", "<mark style="color:blue;">breakout</mark>", "<mark style="color:blue;">news"</mark>, "<mark style="color:blue;">institutional</mark>", "<mark style="color:blue;">wikipedia</mark>", and many more from the **data repository**.&#x20;
 
 
 

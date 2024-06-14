@@ -30,7 +30,7 @@ Comprehensive Factors dataset is a merged set of both accounting and alternative
 df_factor_comp = sov.data("factors/comprehensive")
 ```
 
-<figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
 #### Accounting Factors
 
